@@ -504,8 +504,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 316842063}
-  - {fileID: 1117849066}
-  - {fileID: 460163332}
+  - {fileID: 1453300271}
   - {fileID: 2096903105}
   - {fileID: 1824848830}
   - {fileID: 1481263466}
@@ -741,7 +740,6 @@ GameObject:
   - component: {fileID: 460163334}
   - component: {fileID: 460163333}
   - component: {fileID: 460163335}
-  - component: {fileID: 460163336}
   m_Layer: 5
   m_Name: Right Arrow
   m_TagString: Untagged
@@ -761,8 +759,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 347262496}
-  m_RootOrder: 2
+  m_Father: {fileID: 1453300271}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -851,7 +849,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 460163336}
+      - m_Target: {fileID: 1453300272}
         m_TargetAssemblyTypeName: ChangeLevelSelection, Assembly-CSharp
         m_MethodName: ShowNextLevels
         m_Mode: 1
@@ -863,20 +861,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &460163336
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 460163331}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f57a06e71e23b724ba7d91a7b78cc2b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  grid1: {fileID: 2096903104}
-  grid2: {fileID: 1481263465}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1185,7 +1169,6 @@ GameObject:
   - component: {fileID: 1117849068}
   - component: {fileID: 1117849067}
   - component: {fileID: 1117849069}
-  - component: {fileID: 1117849070}
   m_Layer: 5
   m_Name: Left Arrow
   m_TagString: Untagged
@@ -1205,8 +1188,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 347262496}
-  m_RootOrder: 1
+  m_Father: {fileID: 1453300271}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1290,12 +1273,12 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1117849067}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1117849070}
+      - m_Target: {fileID: 1453300272}
         m_TargetAssemblyTypeName: ChangeLevelSelection, Assembly-CSharp
         m_MethodName: ShowPreviousLevels
         m_Mode: 1
@@ -1307,20 +1290,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1117849070
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1117849065}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f57a06e71e23b724ba7d91a7b78cc2b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  grid1: {fileID: 2096903104}
-  grid2: {fileID: 1481263465}
 --- !u!1001 &1287640908
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1639,6 +1608,61 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2611692462002367203, guid: c69e8162ec8766640a6efb108edac98f, type: 3}
   m_PrefabInstance: {fileID: 1444753762}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1453300270
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1453300271}
+  - component: {fileID: 1453300272}
+  m_Layer: 5
+  m_Name: Arrows
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1453300271
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1453300270}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1117849066}
+  - {fileID: 460163332}
+  m_Father: {fileID: 347262496}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1453300272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1453300270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f57a06e71e23b724ba7d91a7b78cc2b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grid1: {fileID: 2096903104}
+  grid2: {fileID: 1481263465}
+  leftButton: {fileID: 1117849069}
+  rightButton: {fileID: 460163335}
 --- !u!224 &1470221356 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2611692462002367203, guid: c69e8162ec8766640a6efb108edac98f, type: 3}
@@ -1788,7 +1812,7 @@ RectTransform:
   - {fileID: 133038490}
   - {fileID: 1614658571}
   m_Father: {fileID: 347262496}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2274,7 +2298,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 347262496}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -2498,7 +2522,7 @@ RectTransform:
   - {fileID: 1287640909}
   - {fileID: 1472510802}
   m_Father: {fileID: 347262496}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

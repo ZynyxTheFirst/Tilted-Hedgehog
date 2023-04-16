@@ -174,6 +174,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3801602716025572076, guid: ffc124997a62adf4b9d40d5f2d310320, type: 3}
+      propertyPath: m_Color.b
+      value: 0.20754719
+      objectReference: {fileID: 0}
+    - target: {fileID: 3801602716025572076, guid: ffc124997a62adf4b9d40d5f2d310320, type: 3}
+      propertyPath: m_Color.g
+      value: 0.14776
+      objectReference: {fileID: 0}
+    - target: {fileID: 3801602716025572076, guid: ffc124997a62adf4b9d40d5f2d310320, type: 3}
+      propertyPath: m_Color.r
+      value: 0.13608047
+      objectReference: {fileID: 0}
     - target: {fileID: 3801602716025572078, guid: ffc124997a62adf4b9d40d5f2d310320, type: 3}
       propertyPath: m_Name
       value: Board
@@ -321,3 +333,41 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4bf2fe838b27a024e93307b451171ff4, type: 3}
+--- !u!1 &1265076773 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 301857726789970102, guid: 4bf2fe838b27a024e93307b451171ff4, type: 3}
+  m_PrefabInstance: {fileID: 566707561}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1265076778
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1265076773}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 360ff0a89a2097d4f8af8efd3ad52be0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1265076779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1265076773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f49905a90ecce444dbd02d36a5c55ce5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

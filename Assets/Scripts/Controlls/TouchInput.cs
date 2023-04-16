@@ -15,24 +15,13 @@ public class TouchInput : MonoBehaviour
 
     void Update()
     {
-        ///Actual koden för mobiler
-        /*if(Input.touchCount > 0)
+        if(Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
-            if(touch.position.x > Screen.width / 2) desiredRot -= rotSpeed * Time.deltaTime;
-            else desiredRot += rotSpeed * Time.deltaTime;
-        }
-        var desiredRotQ = Quaternion.Euler(transform.eulerAngles.x, transform.eulerAngles.y, desiredRot);
-        transform.rotation = Quaternion.Lerp(transform.rotation, desiredRotQ, Time.deltaTime * damping);
-        */
-        ///Kod för att testa på datorn **Ska tas bort**
-        if (Input.GetMouseButton(0))
-        {
-            if (Input.mousePosition.x > Screen.width / 2) desiredRotation -= rotationSpeed * Time.deltaTime;
+            if(touch.position.x > Screen.width / 2) desiredRotation -= rotationSpeed * Time.deltaTime;
             else desiredRotation += rotationSpeed * Time.deltaTime;
         }
-
-        var desiredRotationQuaternion = Quaternion.Euler(transform.eulerAngles.x, transform.eulerAngles.y, desiredRotation);
-        transform.rotation = Quaternion.Lerp(transform.rotation, desiredRotationQuaternion, Time.deltaTime * damping);
+        var desiredRotQ = Quaternion.Euler(transform.eulerAngles.x, transform.eulerAngles.y, desiredRotation);
+        transform.rotation = Quaternion.Lerp(transform.rotation, desiredRotQ, Time.deltaTime * damping);
     }
 }

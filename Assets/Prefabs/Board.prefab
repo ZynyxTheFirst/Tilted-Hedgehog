@@ -376,6 +376,7 @@ GameObject:
   - component: {fileID: 3801602716025572076}
   - component: {fileID: 3801602716025572077}
   - component: {fileID: 8357730319653342565}
+  - component: {fileID: 2706764812343211052}
   m_Layer: 0
   m_Name: Board
   m_TagString: Untagged
@@ -442,7 +443,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.13608047, g: 0.14776, b: 0.20754719, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -459,12 +460,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3801602716025572078}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d189924e7577c8a489628acb048c6e6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotSpeed: 100
+  rotationSpeed: 80
   damping: 10
 --- !u!114 &8357730319653342565
 MonoBehaviour:
@@ -478,6 +479,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1d94606ace42a24ca648a4417976188, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2706764812343211052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3801602716025572078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1eb824e7155563499c734f567bbaa13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 80
+  damping: 10
 --- !u!1 &3801602716692258016
 GameObject:
   m_ObjectHideFlags: 0

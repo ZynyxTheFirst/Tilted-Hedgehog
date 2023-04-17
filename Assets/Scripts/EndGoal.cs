@@ -31,21 +31,11 @@ public class EndGoal : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other) 
     {
-        if (other.tag == "Player")
+        if (other.CompareTag("Player"))
         {
             Open();
-            PauseGame();
-
+            GetComponent<SpriteRenderer>().enabled = false;
+            Pause.PauseGame();
         }
-    }
-
-    private void PauseGame(){
-        // Stop player movement later.
-        //Time.timeScale = 0;
-    }
-
-    private void ResumeGame(){
-        // This method is probably not needed.
-        //Time.timeScale = 1;
     }
 }

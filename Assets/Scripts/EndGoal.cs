@@ -6,22 +6,23 @@ using UnityEngine.UI;
 public class EndGoal : MonoBehaviour
 {
     public Image scoreScreen;
+    public GameObject canvas;
 
+
+    private void Awake()
+    {
+        canvas.SetActive(true);
+    }
     // Start is called before the first frame update
     void Start()
     {
+
         scoreScreen.transform.localScale = Vector2.zero;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void Open()
-    {
-        scoreScreen.transform.LeanScale(Vector2.one, 0.8f);
+    {   
+        scoreScreen.transform.LeanScale(Vector2.one, 0.5f);
     }
 
     public void Close()

@@ -15,13 +15,16 @@ public class Debug_MouseInput : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButton(0))
+        if (!Pause.isPaused)
         {
-            if (Input.mousePosition.x > Screen.width / 2) desiredRotation -= rotationSpeed * Time.deltaTime;
-            else desiredRotation += rotationSpeed * Time.deltaTime;
-        }
+            if (Input.GetMouseButton(0))
+            {
+                if (Input.mousePosition.x > Screen.width / 2) desiredRotation -= rotationSpeed * Time.deltaTime;
+                else desiredRotation += rotationSpeed * Time.deltaTime;
+            }
 
-        var desiredRotationQuaternion = Quaternion.Euler(transform.eulerAngles.x, transform.eulerAngles.y, desiredRotation);
-        transform.rotation = Quaternion.Lerp(transform.rotation, desiredRotationQuaternion, Time.deltaTime * damping);
+            var desiredRotationQuaternion = Quaternion.Euler(transform.eulerAngles.x, transform.eulerAngles.y, desiredRotation);
+            transform.rotation = Quaternion.Lerp(transform.rotation, desiredRotationQuaternion, Time.deltaTime * damping);
+        }
     }
 }

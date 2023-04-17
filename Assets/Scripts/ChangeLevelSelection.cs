@@ -5,53 +5,64 @@ using UnityEngine.UI;
 
 public class ChangeLevelSelection : MonoBehaviour
 {
-    public GameObject grid1;
-    public GameObject grid2;
+    public GameObject[] grids = new GameObject[3];
 
     public Button leftButton;
     public Button rightButton;
 
+    private int currentPage;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        currentPage = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        buttonStatus();
+        
     }
 
     public void ShowNextLevels(){
-        grid1.SetActive(false);
-        grid2.SetActive(true);
+        foreach (var v in grids)
+        {
+            v.SetActive(false);
+        }
+        grids[currentPage].SetActive(true);
     }
 
-    public void ShowPreviousLevels(){
-        grid1.SetActive(true);
-        grid2.SetActive(false);
-    }
-
-    private void buttonStatus(){
-        if (grid1.activeInHierarchy)
+    public void Back()
+    {
+        if(currentPage == 1)
         {
             leftButton.interactable = false;
+            currentPage -= 1;
+            ShowNextLevels();
         }
-
-        else if (grid2.activeInHierarchy)
-        {
-            leftButton.interactable = true;
-        }
-
-        if (grid1.activeInHierarchy)
+        else if(grids.Length == currentPage+1)
         {
             rightButton.interactable = true;
-        }
-
-        else if (grid2.activeInHierarchy)
-        {
-            rightButton.interactable = false;
+            currentPage -= 1;
+            ShowNextLevels();
         }
     }
+
+    public void Forward()
+    {
+        if (currentPage == grids.Length-2)
+        {
+            rightButton.interactable = false;
+            currentPage += 1;
+            ShowNextLevels();
+        }
+        else if (currentPage == 0)
+        {
+            leftButton.interactable = true;
+            currentPage += 1;
+            ShowNextLevels();
+        }
+    }
+
+
 }

@@ -275,6 +275,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &733908591 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3188379772704050298, guid: 3fdd332814c5a69418a189c2e7a2c364, type: 3}
+  m_PrefabInstance: {fileID: 3188379773194129390}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &782195182
 GameObject:
   m_ObjectHideFlags: 0
@@ -400,6 +405,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreScreen: {fileID: 1212677268}
+  canvas: {fileID: 733908591}
 --- !u!1 &796541267
 GameObject:
   m_ObjectHideFlags: 0
@@ -635,9 +641,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3188379772704050297, guid: 3fdd332814c5a69418a189c2e7a2c364, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 297883779}
     - target: {fileID: 3188379772704050298, guid: 3fdd332814c5a69418a189c2e7a2c364, type: 3}
       propertyPath: m_Name
       value: ScoreUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 3188379772704050298, guid: 3fdd332814c5a69418a189c2e7a2c364, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3188379773056647171, guid: 3fdd332814c5a69418a189c2e7a2c364, type: 3}
+      propertyPath: m_Text
+      value: Level 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3fdd332814c5a69418a189c2e7a2c364, type: 3}

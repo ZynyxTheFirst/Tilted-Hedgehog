@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class TouchInput : MonoBehaviour
@@ -15,13 +13,16 @@ public class TouchInput : MonoBehaviour
 
     void Update()
     {
-        if(Input.touchCount > 0)
+        if (!Pause.isPaused)
         {
-            Touch touch = Input.GetTouch(0);
-            if(touch.position.x > Screen.width / 2) desiredRotation -= rotationSpeed * Time.deltaTime;
-            else desiredRotation += rotationSpeed * Time.deltaTime;
+            if (Input.touchCount > 0)
+            {
+                Touch touch = Input.GetTouch(0);
+                if (touch.position.x > Screen.width / 2) desiredRotation -= rotationSpeed * Time.deltaTime;
+                else desiredRotation += rotationSpeed * Time.deltaTime;
+            }
+            var desiredRotQ = Quaternion.Euler(transform.eulerAngles.x, transform.eulerAngles.y, desiredRotation);
+            transform.rotation = Quaternion.Lerp(transform.rotation, desiredRotQ, Time.deltaTime * damping);
         }
-        var desiredRotQ = Quaternion.Euler(transform.eulerAngles.x, transform.eulerAngles.y, desiredRotation);
-        transform.rotation = Quaternion.Lerp(transform.rotation, desiredRotQ, Time.deltaTime * damping);
     }
 }

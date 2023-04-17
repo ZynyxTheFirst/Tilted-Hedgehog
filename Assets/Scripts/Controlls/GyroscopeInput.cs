@@ -25,9 +25,10 @@ public class GyroscopeInput : MonoBehaviour
     void Update()
     {
         Debug.Log(GetZRotation());
-        if (GetZRotation() > 30 && GetZRotation() < 180)
+
+        if (GetZRotation() < 70 && GetZRotation() > 0)
             desiredRotation += rotationSpeed * Time.deltaTime;
-        if(GetZRotation() < -30 && GetZRotation() > -180)
+        if(GetZRotation() > 110 && GetZRotation() < 180)
             desiredRotation -= rotationSpeed * Time.deltaTime;
         
         var desiredRotQ = Quaternion.Euler(transform.eulerAngles.x, transform.eulerAngles.y, desiredRotation);

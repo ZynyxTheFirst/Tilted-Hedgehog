@@ -1,22 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class LevelSelector : MonoBehaviour
-{
-    public int level;
-    //public Text levelText;
-
-
-    // Start is called before the first frame update
-    void Start()
+{ 
+    public void OpenScene(int level)
     {
-        //levelText.text = level.ToString();
+        //SceneManager.LoadScene("level " + level.ToString());
+        SceneManager.LoadScene(level);
     }
 
-    public void OpenScene(){
-        SceneManager.LoadScene("level " + level.ToString());
+    public void OpenScene(string name)
+    {
+        SceneManager.LoadScene(name);
     }
 }

@@ -6,7 +6,7 @@ public class FOV : MonoBehaviour
 {
     private void Start()
     {
-        Mesh mesh = new Mesh();
+        Mesh mesh = new();
         GetComponent<MeshFilter>().mesh = mesh;
 
         Vector3[] vertices = new Vector3[3];

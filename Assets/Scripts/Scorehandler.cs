@@ -15,6 +15,6 @@ public class Scorehandler : MonoBehaviour
 
     public void FoundStar()
     {
-        starScore += starScore;
+        starScore = starScore + 1;
     }
 }

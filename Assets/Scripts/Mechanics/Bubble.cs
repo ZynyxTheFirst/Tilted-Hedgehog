@@ -13,7 +13,7 @@ public class Bubble : MonoBehaviour
             player = collision.attachedRigidbody;
             transform.position = collision.transform.position;
             transform.parent = collision.transform;
-            collision.attachedRigidbody.gravityScale = -1;
+            collision.attachedRigidbody.gravityScale = -0.1f;
         }
     }
 

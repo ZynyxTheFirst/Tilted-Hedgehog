@@ -10,10 +10,10 @@ public class CogWheel : MonoBehaviour
 
     void Start()
     {
-
         settingsScreen.transform.localScale = Vector2.zero;
     }
 
+    // Toggle the settings menu.
     public void toggle(){
         
         if(settingsScreen.transform.localScale.Equals(Vector2.one)){
@@ -22,15 +22,5 @@ public class CogWheel : MonoBehaviour
         else if(settingsScreen.transform.localScale.Equals(Vector2.zero)){
             settingsScreen.transform.LeanScale(Vector2.one, 0.5f);
         }
-    }
-
-    public void Open()
-    {
-        settingsScreen.transform.LeanScale(Vector2.one, 0.5f);
-    }
-
-    public void Close()
-    {
-        settingsScreen.transform.LeanScale(Vector2.zero, 1f).setEaseInBack();
     }
 }

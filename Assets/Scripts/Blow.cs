@@ -4,19 +4,26 @@ using UnityEngine;
 
 public class Blow : MonoBehaviour
 {
-    public GameObject wind;
+    public ParticleSystem particles;
 
-    public Vector3 blowObjectPosition;
+    public float windSpeed = 2.0f;
 
-      void Start()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-       blowObjectPosition = new Vector3(gameObject.transform.parent.position.x, gameObject.transform.parent.position.y, gameObject.transform.parent.position.z);
-    }
-        private void OnTriggerEnter2D(Collider2D other) 
-    {
-        while (other.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
-            Instantiate(wind, gameObject.transform.parent.position, gameObject.transform.parent.rotation);
+            particles.Play();
+            Vector3 directionOfWind = new Vector3(0f, 1.0f, 0f);
+            particles.GetComponent<Rigidbody2D>().AddForce(directionOfWind * windSpeed);
+        }
+            
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            particles.Stop();
         }
     }
 }

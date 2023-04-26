@@ -8,12 +8,6 @@ public class Blow : MonoBehaviour
 
     public GameObject player;
 
-    private bool isActive = false;
-
-    public float windSpeed = 2.0f;
-
-    private int invokeId;
-
         void Start()
     {
         particles.Stop();
@@ -22,10 +16,10 @@ public class Blow : MonoBehaviour
     private void pumpAir(){
         player.GetComponent<Rigidbody2D>().gravityScale = -1.25f;
             particles.Play();
-            Invoke("RestorState", 0.40f);
+            Invoke("RestorStatesOfPlayerAndBag", 0.40f);
     }
 
-    private void RestorState(){
+    private void RestorStatesOfPlayerAndBag(){
         player.GetComponent<Rigidbody2D>().gravityScale = 3.3f;
         particles.Stop();
     }

@@ -8,10 +8,25 @@ public class Blow : MonoBehaviour
 
     public GameObject player;
 
+    private bool isActive = false;
+
     public float windSpeed = 2.0f;
+
+    private int invokeId;
 
         void Start()
     {
+        particles.Stop();
+    }
+
+    private void pumpAir(){
+        player.GetComponent<Rigidbody2D>().gravityScale = -1.25f;
+            particles.Play();
+            Invoke("RestorState", 0.40f);
+    }
+
+    private void RestorState(){
+        player.GetComponent<Rigidbody2D>().gravityScale = 3.3f;
         particles.Stop();
     }
 
@@ -19,8 +34,7 @@ public class Blow : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            player.GetComponent<Rigidbody2D>().gravityScale = -1.0f;
-            particles.Play();
+            InvokeRepeating("pumpAir", 0.0f, 0.5f);
         }
             
     }
@@ -29,13 +43,7 @@ public class Blow : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-           /*  InvokeRepeating("RestoreGravityScale", 0.1f, 0.1f); */
-            player.GetComponent<Rigidbody2D>().gravityScale = 3.3f;
-            particles.Stop();
+            CancelInvoke("pumpAir");
         }
-    }
-
-    private void RestoreGravityScale(){
-        player.GetComponent<Rigidbody2D>().gravityScale =+ 0.1f;
     }
 }

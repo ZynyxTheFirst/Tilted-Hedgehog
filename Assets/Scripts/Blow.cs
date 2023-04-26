@@ -34,7 +34,7 @@ public class Blow : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            InvokeRepeating("pumpAir", 0.0f, 0.5f);
+            InvokeRepeating("pumpAir", 0.2f, 0.5f);
         }
             
     }

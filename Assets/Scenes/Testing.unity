@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3284711464622776112, guid: ffc124997a62adf4b9d40d5f2d310320, type: 3}
+      propertyPath: scoreScreen
+      value: 
+      objectReference: {fileID: 1516426073}
     - target: {fileID: 3801602716025572067, guid: ffc124997a62adf4b9d40d5f2d310320, type: 3}
       propertyPath: m_RootOrder
       value: 2

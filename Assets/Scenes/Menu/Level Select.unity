@@ -2207,10 +2207,10 @@ RectTransform:
   m_Father: {fileID: 174750079}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0.35009766, y: -50}
-  m_SizeDelta: {x: 0.6998291, y: 350}
+  m_SizeDelta: {x: 0.6998291, y: -450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2096903106
 MonoBehaviour:
@@ -2227,14 +2227,14 @@ MonoBehaviour:
   m_Padding:
     m_Left: 0
     m_Right: 0
-    m_Top: 0
+    m_Top: 20
     m_Bottom: 0
   m_ChildAlignment: 1
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 293.95, y: 300}
+  m_CellSize: {x: 300, y: 300}
   m_Spacing: {x: 70.7, y: 30.01}
-  m_Constraint: 1
+  m_Constraint: 0
   m_ConstraintCount: 3
 --- !u!1 &2124793565
 GameObject:
@@ -2311,6 +2311,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2096903105}
     m_Modifications:
+    - target: {fileID: 2611692462002367201, guid: c69e8162ec8766640a6efb108edac98f, type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2611692462002367201, guid: c69e8162ec8766640a6efb108edac98f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: bc8c49803f39fda4a9791a845797dd7c, type: 3}
+    - target: {fileID: 2611692462002367201, guid: c69e8162ec8766640a6efb108edac98f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2611692462002367202, guid: c69e8162ec8766640a6efb108edac98f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

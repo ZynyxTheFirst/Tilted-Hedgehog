@@ -19,4 +19,5 @@ public class CharacterManager : MonoBehaviour
         if (gameObject.GetComponent<Rigidbody2D>().velocity.magnitude > 0.125) animator.SetBool("isMoving", true);
         else animator.SetBool("isMoving", false);
     }
+    
 }

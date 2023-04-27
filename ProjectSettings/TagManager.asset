@@ -7,6 +7,7 @@ TagManager:
   - GreenSurface
   - OrangeSurface
   - RedSurface
+  - Wind
   layers:
   - Default
   - TransparentFX
@@ -43,6 +44,15 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Objects
+    uniqueID: 3585725147
+    locked: 0
+  - name: Player
+    uniqueID: 118490675
+    locked: 0
+  - name: World
+    uniqueID: 3537235783
     locked: 0
   - name: UI
     uniqueID: 2309625415

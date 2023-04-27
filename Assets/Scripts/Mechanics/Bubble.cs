@@ -20,6 +20,7 @@ public class Bubble : MonoBehaviour
     public void DestroyOnClick()
     {
         player.gravityScale = originalGravity;
-        Destroy(transform.parent.gameObject.transform.parent.gameObject);
+        Destroy(this.gameObject);
+        //Destroy(this.gameObject.transform.parent.gameObject.transform.parent.gameObject);
     }
 }

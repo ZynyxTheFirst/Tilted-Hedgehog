@@ -7,6 +7,11 @@ public class GyroscopeInput : MonoBehaviour
     public float rotationSpeed = 250;
     public float damping = 10;
 
+    private void Start()
+    {
+        Input.gyro.enabled = true;
+    }
+
     private void OnEnable()
     {
         desiredRotation = transform.eulerAngles.z;
@@ -34,16 +39,4 @@ public class GyroscopeInput : MonoBehaviour
         var desiredRotQ = Quaternion.Euler(transform.eulerAngles.x, transform.eulerAngles.y, desiredRotation);
         transform.rotation = Quaternion.Lerp(transform.rotation, desiredRotQ, Time.deltaTime * damping);
     }
-    /*
-    //private float paddleZRot;
-    [SerializeField] private GameObject phoneDummy;
-
-    void Update()
-    {
-        Vector3 gyroEuler = Input.gyro.attitude.eulerAngles;
-        phoneDummy.transform.eulerAngles = new Vector3(-1.0f * gyroEuler.x, -1.0f * gyroEuler.y, gyroEuler.z);
-        Debug.Log("gyroEuler (" + gyroEuler.x + ",\n" + gyroEuler.y + ",\n" + gyroEuler.z + ")");
-        Vector3 upVec = phoneDummy.transform.InverseTransformDirection(-1f * Vector3.forward);
-        //paddleZRot = Mathf.Clamp((Map(upVec.x, -0.46f, 0.46f, -70, 70) * sensitivity), -70, 70);
-    }*/
 }

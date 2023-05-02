@@ -15,9 +15,7 @@ public class PlayerMovementWASD : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-
     }
-
 
 
     // Update is called once per frame
@@ -34,12 +32,14 @@ public class PlayerMovementWASD : MonoBehaviour
         Debug.Log("Velocity y: " + rb.velocity.y);
 
         calculateSpeed();
+        //calculateFriction();
     }
 
     private void calculateSpeed()
     {
         float temp = 0f;
 
+        // Max speed
         if (rb.velocity.x > speedCeiling || rb.velocity.x < speedCeiling*-1 || rb.velocity.y > speedCeiling || rb.velocity.y < speedCeiling*-1)
         {
             temp = 0f;
@@ -49,6 +49,13 @@ public class PlayerMovementWASD : MonoBehaviour
         {
             temp = moveSpeed;
         }
+
+        rb.AddForce(movement * temp, ForceMode2D.Force);
+    }
+
+    private void calculateFriction()
+    {
+        float temp = 0f;
 
         rb.AddForce(movement * temp, ForceMode2D.Force);
     }

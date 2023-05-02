@@ -41,6 +41,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu/Store.unity
     guid: cf156605f1e44274e92cc6666cdf1162
+  - enabled: 1
+    path: Assets/Scenes/FilipTutorialMaps/TutorialLevel1 - Trampoline.unity
+    guid: ef8d3642c50c570418db1b36cd2a28d0
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 9272b556d077c6740b412c0dc48a3170, type: 2}
     com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: cb98cf92434d0b04e849615e1219485f, type: 2}

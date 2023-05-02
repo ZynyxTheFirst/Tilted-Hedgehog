@@ -123,25 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &160894497 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1445085356, guid: ffc124997a62adf4b9d40d5f2d310320, type: 3}
-  m_PrefabInstance: {fileID: 184110035}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &160894503
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 160894497}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 099bf60ffe356a8479b31c8a9a98b472, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  particles: {fileID: 0}
-  player: {fileID: 0}
 --- !u!1001 &184110035
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -959,6 +940,14 @@ PrefabInstance:
     - target: {fileID: 2054532036615063544, guid: f8664c7abcfa3f646bc54535ca5470b0, type: 3}
       propertyPath: m_Name
       value: Bubble
+      objectReference: {fileID: 0}
+    - target: {fileID: 2054532036615063547, guid: f8664c7abcfa3f646bc54535ca5470b0, type: 3}
+      propertyPath: m_Radius
+      value: 0.47771358
+      objectReference: {fileID: 0}
+    - target: {fileID: 2054532036615063547, guid: f8664c7abcfa3f646bc54535ca5470b0, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.0067192744
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8664c7abcfa3f646bc54535ca5470b0, type: 3}

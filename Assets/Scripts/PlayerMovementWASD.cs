@@ -40,7 +40,7 @@ public class PlayerMovementWASD : MonoBehaviour
     {
         float temp = 0f;
 
-        if (rb.velocity.x > speedCeiling || rb.velocity.y > speedCeiling)
+        if (rb.velocity.x > speedCeiling || rb.velocity.x < speedCeiling*-1 || rb.velocity.y > speedCeiling || rb.velocity.y < speedCeiling*-1)
         {
             temp = 0f;
 

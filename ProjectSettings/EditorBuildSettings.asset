@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu/Main Menu.unity
     guid: e44a9cd3cb40cd043961004d600902e3
   - enabled: 1
+    path: Assets/Scenes/TestNewBoard.unity
+    guid: a4322b8daf2566b4f89f162a35c89e1c
+  - enabled: 1
     path: Assets/Scenes/Levels/lvl1 key + trampoline.unity
     guid: 376c8d3c909f5ca4e819d641ad3e73b4
   - enabled: 1
@@ -36,7 +39,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Testing_9.unity
     guid: 3fc8acdd13e6c734bafef6554d6fdbcd
   - enabled: 1
-    path: Assets/Scenes/Menu/Level Select.unity
+    path: 
     guid: fc9e53c1bbf83d3499876f941fab035e
   - enabled: 1
     path: Assets/Scenes/Menu/Store.unity

@@ -233,8 +233,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0.0032958984}
-  m_SizeDelta: {x: -792, y: 800}
+  m_AnchoredPosition: {x: -16.349915, y: -0.0032958984}
+  m_SizeDelta: {x: -824.70013, y: 800}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &316842064
 MonoBehaviour:
@@ -249,15 +249,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.13683695, g: 0.7075472, b: 0.15618308, a: 1}
+  m_Color: {r: 0.29792634, g: 0.6132076, b: 0.3087981, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -5177388603050735206, guid: 8884154dfe85442a3a3578be807dbcdf, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 3286163911610860551, guid: e5e56f2bdfbdf4021bbf5867fbd5a0d1, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -342,7 +342,7 @@ Canvas:
   m_GameObject: {fileID: 347262492}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 519420031}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -612,6 +612,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 3286163911610860551, guid: e5e56f2bdfbdf4021bbf5867fbd5a0d1, type: 3}
+    - target: {fileID: 2611692462002367201, guid: c69e8162ec8766640a6efb108edac98f, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2611692462002367202, guid: c69e8162ec8766640a6efb108edac98f, type: 3}
       propertyPath: m_Transition
       value: 2
@@ -2092,11 +2096,11 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
-    m_NormalColor: {r: 0.5411765, g: 1, b: 0.5529412, a: 1}
-    m_HighlightedColor: {r: 0.7877358, g: 1, b: 0.7931785, a: 1}
-    m_PressedColor: {r: 0.24003203, g: 0.5849056, b: 0.24769592, a: 1}
+    m_NormalColor: {r: 0.7924528, g: 0.1580686, b: 0.14578143, a: 1}
+    m_HighlightedColor: {r: 1, g: 0.2173242, b: 0.2028302, a: 1}
+    m_PressedColor: {r: 0.6226415, g: 0.12954786, b: 0.12041651, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -2149,8 +2153,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bc8c49803f39fda4a9791a845797dd7c, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 3286163911610860551, guid: 876ad3de365ab4824b4abcef1336639c, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2311,6 +2315,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 3286163911610860551, guid: e5e56f2bdfbdf4021bbf5867fbd5a0d1, type: 3}
+    - target: {fileID: 2611692462002367201, guid: c69e8162ec8766640a6efb108edac98f, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2611692462002367202, guid: c69e8162ec8766640a6efb108edac98f, type: 3}
       propertyPath: m_Transition
       value: 2
@@ -2707,7 +2715,7 @@ MonoBehaviour:
     m_Top: -10
     m_Bottom: 90
   m_ChildAlignment: 0
-  m_Spacing: 50
+  m_Spacing: 30
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 1
@@ -2795,6 +2803,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2096903105}
     m_Modifications:
+    - target: {fileID: 2611692462002367201, guid: c69e8162ec8766640a6efb108edac98f, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2611692462002367202, guid: c69e8162ec8766640a6efb108edac98f, type: 3}
+      propertyPath: m_Transition
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2611692462002367203, guid: c69e8162ec8766640a6efb108edac98f, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

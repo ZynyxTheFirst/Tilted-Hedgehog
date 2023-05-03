@@ -27,6 +27,7 @@ public class EndGoal : MonoBehaviour
             OpenScoreScreen();
             GetComponent<SpriteRenderer>().enabled = false;
             Pause.PauseGame();
+            PlayerPrefs.SetInt("LevelsUnlocked", 2);
         }
     }
 }

@@ -1,12 +1,12 @@
+using System.Collections.Generic;
 using UnityEngine;
 
-public class GyroControlls : MonoBehaviour
+public class secondGyro : MonoBehaviour
 {
+    public MovementJoystick movementJoystick;
     public float playerSpeed;
     public float slipperyFactor; // controls the slippery movement
     private Rigidbody2D rb;
-    private bool gyroEnabled;
-    private Gyroscope gyro;
 
     // Start is called before the first frame update
     void Start()
@@ -17,24 +17,30 @@ public class GyroControlls : MonoBehaviour
             Debug.LogError("Rigidbody2D component not found in the object.");
         }
 
-        gyroEnabled = SystemInfo.supportsGyroscope;
-        if (gyroEnabled)
-        {
-            gyro = Input.gyro;
-            gyro.enabled = true;
-        }
-        else
-        {
-            Debug.LogError("Gyro input is not supported on this device.");
-        }
+        Input.gyro.enabled = true; // Enable gyro input
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        Vector2 targetVelocity = new Vector2(Input.gyro.attitude.x * -playerSpeed, Input.gyro.attitude.y * -playerSpeed);
-        rb.velocity = Vector2.Lerp(rb.velocity, targetVelocity, Time.deltaTime * slipperyFactor);
+        if (movementJoystick != null && rb != null && movementJoystick.joystickVec.y != 0)
+        {
+            Vector2 targetVelocity = new Vector2(movementJoystick.joystickVec.x * playerSpeed, movementJoystick.joystickVec.y * playerSpeed);
+            rb.velocity = Vector2.Lerp(rb.velocity, targetVelocity, Time.deltaTime * slipperyFactor);
+        }
+        else
+        {
+            rb.velocity = Vector2.Lerp(rb.velocity, Vector2.zero, Time.deltaTime * slipperyFactor);
+        }
+
+        float roll = GetZRotation();
+
+        if (roll < 70 && roll > 0)
+            transform.Rotate(0, 0, -playerSpeed * Time.deltaTime);
+        if (roll > 110 && roll < 180)
+            transform.Rotate(0, 0, playerSpeed * Time.deltaTime);
     }
+
     float GetZRotation()
     {
         Quaternion referenceRotation = Quaternion.identity;
@@ -48,5 +54,4 @@ public class GyroControlls : MonoBehaviour
 
         return roll;
     }
-
 }

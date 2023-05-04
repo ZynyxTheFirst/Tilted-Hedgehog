@@ -194,7 +194,8 @@ MonoBehaviour:
   - {fileID: 1405698315}
   - {fileID: 1975006033}
   - {fileID: 816952318}
-  levelsUnlocked: 1
+  levelsUnlocked: 3
+  reset: 0
 --- !u!1 &316842062
 GameObject:
   m_ObjectHideFlags: 0
@@ -655,7 +656,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2611692462002367202, guid: c69e8162ec8766640a6efb108edac98f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2611692462002367203, guid: c69e8162ec8766640a6efb108edac98f, type: 3}
       propertyPath: m_Pivot.x
@@ -1055,6 +1056,7 @@ MonoBehaviour:
   - {fileID: 1975006033}
   - {fileID: 816952318}
   levelsUnlocked: 1
+  reset: 0
 --- !u!1 &1058047325
 GameObject:
   m_ObjectHideFlags: 0
@@ -2358,7 +2360,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2611692462002367202, guid: c69e8162ec8766640a6efb108edac98f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2611692462002367203, guid: c69e8162ec8766640a6efb108edac98f, type: 3}
       propertyPath: m_Pivot.x
@@ -2834,7 +2836,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2611692462002367202, guid: c69e8162ec8766640a6efb108edac98f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2611692462002367203, guid: c69e8162ec8766640a6efb108edac98f, type: 3}
       propertyPath: m_Pivot.x

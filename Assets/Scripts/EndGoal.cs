@@ -4,6 +4,7 @@ using UnityEngine.UI;
 public class EndGoal : MonoBehaviour
 {
     [SerializeField] Image scoreScreen;
+    [SerializeField] int levelToUnlock = 0;
 
     void Start()
     {
@@ -27,7 +28,7 @@ public class EndGoal : MonoBehaviour
             OpenScoreScreen();
             GetComponent<SpriteRenderer>().enabled = false;
             Pause.PauseGame();
-            PlayerPrefs.SetInt("LevelsUnlocked", 2);
+            PlayerPrefs.SetInt("LevelsUnlocked", levelToUnlock);
         }
     }
 }

@@ -446,6 +446,10 @@ PrefabInstance:
       propertyPath: scoreScreen
       value: 
       objectReference: {fileID: 1947999364}
+    - target: {fileID: 7552683143559868133, guid: 73d260febcb5b3a43b8692cd01f3b934, type: 3}
+      propertyPath: levelToUnlock
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7552683143559868134, guid: 73d260febcb5b3a43b8692cd01f3b934, type: 3}
       propertyPath: m_RootOrder
       value: 1

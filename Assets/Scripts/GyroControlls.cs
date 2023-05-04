@@ -21,7 +21,7 @@ public class GyroControlls : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        Vector2 targetVelocity = new Vector2(Input.gyro.attitude.x * playerSpeed, Input.gyro.attitude.y * playerSpeed);
+        Vector2 targetVelocity = new Vector2(Input.gyro.attitude.x * -playerSpeed, Input.gyro.attitude.y * -playerSpeed);
         rb.velocity = Vector2.Lerp(rb.velocity, targetVelocity, Time.deltaTime * slipperyFactor);
     }
 }

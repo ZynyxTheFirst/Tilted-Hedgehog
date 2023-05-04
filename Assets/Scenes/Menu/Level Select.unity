@@ -286,6 +286,7 @@ GameObject:
   - component: {fileID: 347262495}
   - component: {fileID: 347262494}
   - component: {fileID: 347262493}
+  - component: {fileID: 347262497}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -376,6 +377,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &347262497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 347262492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3af44b16420bb456aa92906409da5679, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttons:
+  - {fileID: 2611692460649653968}
+  - {fileID: 1871661625}
+  - {fileID: 670506333}
 --- !u!1 &460163331
 GameObject:
   m_ObjectHideFlags: 0
@@ -627,14 +644,18 @@ PrefabInstance:
     - target: {fileID: 2611692462002367202, guid: c69e8162ec8766640a6efb108edac98f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 347262497}
     - target: {fileID: 2611692462002367202, guid: c69e8162ec8766640a6efb108edac98f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OpenScene
+      value: LoadLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2611692462002367202, guid: c69e8162ec8766640a6efb108edac98f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LevelManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2611692462002367202, guid: c69e8162ec8766640a6efb108edac98f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2611692462002367203, guid: c69e8162ec8766640a6efb108edac98f, type: 3}
       propertyPath: m_Pivot.x
@@ -2326,14 +2347,18 @@ PrefabInstance:
     - target: {fileID: 2611692462002367202, guid: c69e8162ec8766640a6efb108edac98f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 347262497}
     - target: {fileID: 2611692462002367202, guid: c69e8162ec8766640a6efb108edac98f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OpenScene
+      value: LoadLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2611692462002367202, guid: c69e8162ec8766640a6efb108edac98f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LevelManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2611692462002367202, guid: c69e8162ec8766640a6efb108edac98f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2611692462002367203, guid: c69e8162ec8766640a6efb108edac98f, type: 3}
       propertyPath: m_Pivot.x
@@ -2795,6 +2820,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2096903105}
     m_Modifications:
+    - target: {fileID: 2611692462002367202, guid: c69e8162ec8766640a6efb108edac98f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 347262497}
+    - target: {fileID: 2611692462002367202, guid: c69e8162ec8766640a6efb108edac98f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2611692462002367202, guid: c69e8162ec8766640a6efb108edac98f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LevelManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2611692462002367202, guid: c69e8162ec8766640a6efb108edac98f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2611692462002367203, guid: c69e8162ec8766640a6efb108edac98f, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2941,6 +2982,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c69e8162ec8766640a6efb108edac98f, type: 3}
+--- !u!114 &2611692460649653968 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2611692462002367202, guid: c69e8162ec8766640a6efb108edac98f, type: 3}
+  m_PrefabInstance: {fileID: 2611692460649653967}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5666492602539930494
 PrefabInstance:
   m_ObjectHideFlags: 0

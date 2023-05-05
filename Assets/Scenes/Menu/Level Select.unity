@@ -394,6 +394,12 @@ MonoBehaviour:
   - {fileID: 2611692460649653968}
   - {fileID: 1871661625}
   - {fileID: 670506333}
+  - {fileID: 1811660185}
+  - {fileID: 1600993175}
+  - {fileID: 1652448896}
+  - {fileID: 1405698315}
+  - {fileID: 1975006033}
+  - {fileID: 816952318}
 --- !u!1 &460163331
 GameObject:
   m_ObjectHideFlags: 0
@@ -1029,34 +1035,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04b3e3160cc2fb94ba323ce0794061eb, type: 3}
---- !u!1 &1034502287 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2848387779960653693, guid: 04b3e3160cc2fb94ba323ce0794061eb, type: 3}
-  m_PrefabInstance: {fileID: 1034502286}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1034502288
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1034502287}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 826fc6f826e4bff4e84e8780161a4710, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  levelButtons:
-  - {fileID: 1871661625}
-  - {fileID: 670506333}
-  - {fileID: 1811660185}
-  - {fileID: 1600993175}
-  - {fileID: 1652448896}
-  - {fileID: 1405698315}
-  - {fileID: 1975006033}
-  - {fileID: 816952318}
-  levelsUnlocked: 1
-  reset: 0
 --- !u!1 &1058047325
 GameObject:
   m_ObjectHideFlags: 0
@@ -1102,7 +1080,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1058047325}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
@@ -2094,7 +2072,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 135.00146, y: -64.00635}
-  m_SizeDelta: {x: 150, y: 95}
+  m_SizeDelta: {x: 105, y: 95}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1789066006
 MonoBehaviour:
@@ -2115,7 +2093,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 0.5411765, g: 1, b: 0.5529412, a: 1}
     m_HighlightedColor: {r: 0.7877358, g: 1, b: 0.7931785, a: 1}
@@ -2172,9 +2150,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bc8c49803f39fda4a9791a845797dd7c, type: 3}
-  m_Type: 1
-  m_PreserveAspect: 0
+  m_Sprite: {fileID: 3286163911610860551, guid: 902b965baddbdb34883ab7e2d6c4dc57, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1

@@ -186,6 +186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelButtons:
+  - {fileID: 2611692460649653968}
   - {fileID: 1871661625}
   - {fileID: 670506333}
   - {fileID: 1811660185}
@@ -194,7 +195,7 @@ MonoBehaviour:
   - {fileID: 1405698315}
   - {fileID: 1975006033}
   - {fileID: 816952318}
-  levelsUnlocked: 3
+  levelsUnlocked: 1
   reset: 0
 --- !u!1 &316842062
 GameObject:
@@ -385,7 +386,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 347262492}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3af44b16420bb456aa92906409da5679, type: 3}
   m_Name: 

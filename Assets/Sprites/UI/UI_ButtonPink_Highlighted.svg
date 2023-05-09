@@ -7,9 +7,33 @@
    viewBox="0 0 210 297"
    version="1.1"
    id="svg5"
+   sodipodi:docname="UI_ButtonPink_Highlighted.svg"
+   inkscape:version="1.2.2 (b0a8486, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview2057"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.2102413"
+     inkscape:cx="-23.782197"
+     inkscape:cy="561.25984"
+     inkscape:window-width="1309"
+     inkscape:window-height="456"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg5" />
   <defs
      id="defs2">
     <linearGradient
@@ -78,7 +102,7 @@
        y="83.833527"
        d="M 39.050662,83.833527 H 174.36188 a 5.7322075,5.7322075 45 0 1 5.73221,5.732207 V 224.51869 a 6.8069964,6.8069964 135 0 1 -6.807,6.80699 H 39.408925 a 6.8069963,6.8069963 45 0 1 -6.806996,-6.80699 V 90.28226 a 6.4487335,6.4487335 135 0 1 6.448733,-6.448733 z" />
     <path
-       style="display:inline;fill:#cccccc;fill-opacity:1;stroke-width:0.264583;opacity:0.3"
+       style="display:inline;fill:#ebc1c1;fill-opacity:0.2;stroke-width:0.264583;opacity:1"
        id="path40711"
        width="154.29915"
        height="154.29915"

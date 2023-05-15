@@ -11,7 +11,7 @@ public class MainMenuScoreDisplay : MonoBehaviour
     private void Start()
     {
         int score = PlayerPrefs.GetInt("StarScore", 0);
-        scoreText.text = "Score: " + score;
+        scoreText.text = "Stars: " + score;
 
     }
 

@@ -65,11 +65,16 @@ public class KillPlayer : MonoBehaviour
         while (Vector2.Distance(player.transform.position, targetPosition) > 0.01f)
         {
             player.transform.position = Vector2.MoveTowards(player.transform.position, targetPosition, speed * Time.deltaTime);
+            if (Vector2.Distance(player.transform.position, targetPosition) > 0.5f)
+            {
+                playerAnimator.SetBool("isDead", true);
+            }
             yield return null;
         }
 
+        
         player.transform.position = targetPosition;
-        playerAnimator.SetBool("isDead", true);
+        
     }
 
 }

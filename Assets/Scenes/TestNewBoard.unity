@@ -5616,7 +5616,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8465603088524723685, guid: 89d893d93b0141840b7085559fa50c9d, type: 3}
       propertyPath: time
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8465603088524723685, guid: 89d893d93b0141840b7085559fa50c9d, type: 3}
       propertyPath: player
@@ -5624,7 +5624,7 @@ PrefabInstance:
       objectReference: {fileID: 1354038238}
     - target: {fileID: 8465603088524723685, guid: 89d893d93b0141840b7085559fa50c9d, type: 3}
       propertyPath: moveSpeed
-      value: 1
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 8465603088524723685, guid: 89d893d93b0141840b7085559fa50c9d, type: 3}
       propertyPath: respawnPoint

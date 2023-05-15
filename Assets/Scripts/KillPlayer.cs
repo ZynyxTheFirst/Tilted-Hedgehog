@@ -26,6 +26,18 @@ public class KillPlayer : MonoBehaviour
         deathzoneTransform = GetComponent<Transform>();
         playerAnimator = player.GetComponent<Animator>();
     }
+
+    private void FixedUpdate()
+    {
+        if (playerAnimator.GetBool("isDead"))
+        {
+            StartCoroutine(MovePlayerToDeathZone());
+            playerAnimator.SetBool("isDead", false);
+        }
+
+    }
+
+
     //Restarts the scene
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -33,7 +45,7 @@ public class KillPlayer : MonoBehaviour
         {
             Invoke("CallGameOver", time);
             //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            player.GetComponent<Transform>().position = deathzoneTransform.position;
+            //player.GetComponent<Transform>().position = deathzoneTransform.position * Time.deltaTime;
             player.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
             player.GetComponent<MovePlayer>().enabled = false;
             playerAnimator.SetBool("isDead", true);
@@ -44,6 +56,22 @@ public class KillPlayer : MonoBehaviour
     private void CallGameOver()
     {
         GameManager.GameOver();
+    }
+
+    private IEnumerator MovePlayerToDeathZone()
+    {
+        Vector2 startPosition = player.transform.position;
+        Vector2 targetPosition = deathzoneTransform.position;
+        float distance = Vector2.Distance(startPosition, targetPosition);
+        float speed = distance / time;
+
+        while (Vector2.Distance(player.transform.position, targetPosition) > 0.01f)
+        {
+            player.transform.position = Vector2.MoveTowards(player.transform.position, targetPosition, speed * Time.deltaTime);
+            yield return null;
+        }
+
+        player.transform.position = targetPosition;
     }
 
 }

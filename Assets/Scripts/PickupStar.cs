@@ -21,6 +21,16 @@ public class PickupStar : MonoBehaviour
             SCR.FoundStar();
             Destroy(this.gameObject);
         }
+        
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        // Set the color of the Gizmos to red
+        Gizmos.color = Color.red;
+
+        // Draw a wire sphere with the same radius as the circle collider
+        Gizmos.DrawWireSphere(transform.position, CollectRadius);
     }
 
 }

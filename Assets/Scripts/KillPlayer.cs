@@ -8,6 +8,7 @@ public class KillPlayer : MonoBehaviour
     public GameObject player;
     public Transform respawnPoint;
     public float time = 2f;
+    public float moveSpeed = 2f;
     private Transform deathzoneTransform;
     private Animator playerAnimator;
 
@@ -29,11 +30,6 @@ public class KillPlayer : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (playerAnimator.GetBool("isDead"))
-        {
-            StartCoroutine(MovePlayerToDeathZone());
-            playerAnimator.SetBool("isDead", false);
-        }
 
     }
 
@@ -44,12 +40,13 @@ public class KillPlayer : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             Invoke("CallGameOver", time);
+            StartCoroutine(MovePlayerToDeathZone());
             //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             //player.GetComponent<Transform>().position = deathzoneTransform.position * Time.deltaTime;
             player.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
             player.GetComponent<MovePlayer>().enabled = false;
-            playerAnimator.SetBool("isDead", true);
-            Debug.Log(playerAnimator.GetBool("isDead"));
+            
+
         }
     }
 
@@ -63,7 +60,7 @@ public class KillPlayer : MonoBehaviour
         Vector2 startPosition = player.transform.position;
         Vector2 targetPosition = deathzoneTransform.position;
         float distance = Vector2.Distance(startPosition, targetPosition);
-        float speed = distance / time;
+        float speed = distance / moveSpeed;
 
         while (Vector2.Distance(player.transform.position, targetPosition) > 0.01f)
         {
@@ -72,6 +69,7 @@ public class KillPlayer : MonoBehaviour
         }
 
         player.transform.position = targetPosition;
+        playerAnimator.SetBool("isDead", true);
     }
 
 }

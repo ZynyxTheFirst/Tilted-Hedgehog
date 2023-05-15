@@ -9,6 +9,7 @@ public class KillPlayer : MonoBehaviour
     public Transform respawnPoint;
     public float time = 2f;
     public float moveSpeed = 2f;
+    public float minSpeed = 2f;
     private Transform deathzoneTransform;
     private Animator playerAnimator;
 
@@ -55,7 +56,7 @@ public class KillPlayer : MonoBehaviour
         GameManager.GameOver();
     }
 
-    private IEnumerator MovePlayerToDeathZone()
+    private IEnumerator MovePlayerToDeathZone2()
     {
         Vector2 startPosition = player.transform.position;
         Vector2 targetPosition = deathzoneTransform.position;
@@ -76,5 +77,35 @@ public class KillPlayer : MonoBehaviour
         player.transform.position = targetPosition;
         
     }
+
+    private IEnumerator MovePlayerToDeathZone()
+    {
+        Vector2 startPosition = player.transform.position;
+        Vector2 targetPosition = deathzoneTransform.position;
+        float distance = Vector2.Distance(startPosition, targetPosition);
+
+        // Calculate move speed based on player's speed when it touches the death zone
+        float moveSpeed = player.GetComponent<Rigidbody2D>().velocity.magnitude;
+        Debug.Log(moveSpeed);
+        
+        if(moveSpeed < minSpeed)
+        {
+            moveSpeed = minSpeed;
+        }
+        Debug.Log(moveSpeed);
+
+        while (Vector2.Distance(player.transform.position, targetPosition) > 0.01f)
+        {
+            player.transform.position = Vector2.MoveTowards(player.transform.position, targetPosition, moveSpeed * Time.deltaTime);
+            if (Vector2.Distance(player.transform.position, targetPosition) > 0.5f)
+            {
+                playerAnimator.SetBool("isDead", true);
+            }
+            yield return null;
+        }
+
+        player.transform.position = targetPosition;
+    }
+
 
 }

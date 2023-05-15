@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="50mm"
+   height="50mm"
+   viewBox="0 0 50 50"
+   version="1.1"
+   id="svg3056"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="RockTest2.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview3058"
+     pagecolor="#ffffff"
+     bordercolor="#cccccc"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="1"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="5.1754899"
+     inkscape:cx="81.055129"
+     inkscape:cy="82.697485"
+     inkscape:window-width="2560"
+     inkscape:window-height="1377"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs3053" />
+  <g
+     inkscape:label="RockBase"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#b8b8b8;stroke-width:0.264583;paint-order:stroke markers fill;fill-opacity:1"
+       d="m 15.592324,17.125995 2.402751,-0.306734 4.243157,0.408979 2.402752,1.329183 3.118465,0.204488 3.322954,-1.278059 2.40275,-0.971325 2.300507,1.022448 2.096019,2.760607 1.226936,2.709487 -3.118463,3.271832 -5.521217,2.147138 -6.23693,2.913976 -3.425199,2.862852 -7.003765,-1.124691 -1.07357,-2.351629 -3.118465,-4.192035 1.431427,-7.310501 z"
+       id="path3242" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="RockDetails">
+    <path
+       style="fill:#c2c2c2;fill-opacity:1;stroke-width:0.264583;paint-order:stroke markers fill"
+       d="m 35.018826,17.586097 -1.635916,-0.869081 -4.652137,2.14714 -4.089788,0.05112 -2.096018,-0.869081 -2.14714,-0.66459 -3.271832,-0.102245 0.102245,3.169587 16.256915,1.278059 z"
+       id="path4314"
+       sodipodi:nodetypes="cccccccccc" />
+  </g>
+</svg>

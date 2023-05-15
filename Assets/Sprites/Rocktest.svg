@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="50mm"
+   height="50mm"
+   viewBox="0 0 50 50"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="Rocktest.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#cccccc"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="1"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.587745"
+     inkscape:cx="-3.2847132"
+     inkscape:cy="93.13128"
+     inkscape:window-width="2560"
+     inkscape:window-height="1377"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer3" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="RockBase"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#d6d6d6;stroke-width:0.264583;paint-order:stroke markers fill;fill-opacity:1"
+       d="m 10.266309,19.303554 4.699368,-1.012172 6.796007,1.373662 7.374391,2.385832 2.89192,4.337877 0.216892,4.699368 -4.55477,1.952045 -1.662853,1.952043 -4.337878,-0.0723 -4.771665,1.012171 -3.687195,-1.735151 -5.205453,-1.879745 -1.3013631,-4.482476 1.156767,-4.91626 z"
+       id="path242" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="RockDarkerGrey">
+    <path
+       style="fill:#c7c7c7;fill-opacity:1;stroke-width:0.264583;paint-order:stroke markers fill"
+       d="M 8.3865626,29.786757 7.808179,27.907011 7.7358811,26.244158 9.6156279,24.147517 13.881207,25.304284 15.037975,30.075949 14.893379,34.703017 8.3142647,31.8111 Z"
+       id="path2497" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="RockDarkerGrey 2">
+    <path
+       style="fill:#c7c7c7;fill-opacity:1;stroke-width:0.264583;paint-order:stroke markers fill"
+       d="m 14.893379,18.508276 -0.144596,2.168939 1.807448,0.433788 8.169669,2.891918 5.566944,1.012171 v -0.939873 l -2.096643,-2.096641 z"
+       id="path2770" />
+  </g>
+</svg>

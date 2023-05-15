@@ -43,7 +43,7 @@ public class Pickup_Star: MonoBehaviour
                 removeGameObject = true;
                 collision.GetComponent<MovePlayer>().GetComponent<PickupStar>();
                 //spriteRenderer.sprite = null;
-                animator.enabled = false;
+                //animator.enabled = false;
                 particles.Play();
                 canPickUpCoin = false;
                 audioSource.pitch = Random.Range(0.9f, 1.1f);

@@ -16,5 +16,6 @@ public class Scorehandler : MonoBehaviour
     public void FoundStar()
     {
         starScore = starScore + 1;
+        PlayerPrefs.SetInt("StarScore", starScore);
     }
 }

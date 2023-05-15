@@ -239,7 +239,7 @@ MonoBehaviour:
   particles: {fileID: 0}
   spriteRenderer: {fileID: 0}
   animator: {fileID: 0}
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 1267974}
   pickUpClip: {fileID: 8300000, guid: e3ae4bead0884438a8f8c03b44778600, type: 3}
   timeBeforeDeletion: 1
 --- !u!4 &103741625 stripped

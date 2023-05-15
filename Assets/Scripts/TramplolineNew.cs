@@ -26,6 +26,7 @@ public class TramplolineNew : MonoBehaviour
         {
             rb.velocity = opposite * launchForce * 2f * Time.deltaTime;
             rb.AddForce(opposite * launchForce * 2f * Time.deltaTime);
+            Debug.Log("Studs " + opposite);
 
         }
     }

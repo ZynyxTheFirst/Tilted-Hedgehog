@@ -8,9 +8,11 @@ public class PickupStar : MonoBehaviour
 
     public LayerMask PlayerMask;
     public float CollectRadius = 0.5f;
+    private int starsCollected;
 
     private void Start()
     {
+        starsCollected = PlayerPrefs.GetInt("StarsCollected");
         SCR = FindObjectOfType<Scorehandler>();
     }
 
@@ -18,6 +20,7 @@ public class PickupStar : MonoBehaviour
     {
         if (Physics2D.OverlapCircle(this.transform.position, CollectRadius, PlayerMask))
         {
+            PlayerPrefs.SetInt("StarsCollected", starsCollected +1);
             SCR.FoundStar();
             Destroy(this.gameObject);
         }

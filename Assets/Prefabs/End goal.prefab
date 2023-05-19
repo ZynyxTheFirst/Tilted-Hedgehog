@@ -120,13 +120,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7552683143559868153}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a68df7b315f98b4dae139bc15152de7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   scoreScreen: {fileID: 0}
-  levelToUnlock: 0
 --- !u!114 &2860895643931411835
 MonoBehaviour:
   m_ObjectHideFlags: 0

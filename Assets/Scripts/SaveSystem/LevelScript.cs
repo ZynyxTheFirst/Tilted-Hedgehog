@@ -16,4 +16,19 @@ public class LevelScript : MonoBehaviour
 
         Debug.Log("LEVEL" + PlayerPrefs.GetInt("levelsUnlocked") + "UNLOCKED");
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            int currentLevel = SceneManager.GetActiveScene().buildIndex;
+
+            if (currentLevel >= PlayerPrefs.GetInt("levelsUnlocked"))
+            {
+                PlayerPrefs.SetInt("levelsUnlocked", currentLevel + 1);
+            }
+
+            Debug.Log("LEVEL" + PlayerPrefs.GetInt("levelsUnlocked") + "UNLOCKED");
+        }
+    }
 }

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7552683143559868135}
   - component: {fileID: 7552683143559868152}
   - component: {fileID: 7552683143559868133}
+  - component: {fileID: 2860895643931411835}
   m_Layer: 0
   m_Name: End goal
   m_TagString: Untagged
@@ -119,10 +120,22 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7552683143559868153}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a68df7b315f98b4dae139bc15152de7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   scoreScreen: {fileID: 0}
-  canvas: {fileID: 0}
+  levelToUnlock: 0
+--- !u!114 &2860895643931411835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7552683143559868153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea6119648f8fc4c4389a41f22cf6e13d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

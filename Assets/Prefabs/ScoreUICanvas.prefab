@@ -824,6 +824,7 @@ GameObject:
   - component: {fileID: 3188379771981607805}
   - component: {fileID: 3188379771981607803}
   - component: {fileID: 3188379771981607802}
+  - component: {fileID: 1704162796470585874}
   m_Layer: 5
   m_Name: Score screen
   m_TagString: Untagged
@@ -894,6 +895,24 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1704162796470585874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3188379771981607804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a161fa04c7e39d44e9ce2fe04840849d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amountCollected: 0
+  starCollected: {fileID: 21300000, guid: 20863819369ed0641af05d0e51f04a91, type: 3}
+  stars:
+  - {fileID: 3188379772951897616}
+  - {fileID: 3188379773939241956}
+  - {fileID: 3188379773720096722}
 --- !u!1 &3188379772704050298
 GameObject:
   m_ObjectHideFlags: 0

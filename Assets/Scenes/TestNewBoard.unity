@@ -302,6 +302,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1704162796470585874, guid: 3fdd332814c5a69418a189c2e7a2c364, type: 3}
+      propertyPath: resetAllPlayerPref
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1704162796470585874, guid: 3fdd332814c5a69418a189c2e7a2c364, type: 3}
       propertyPath: starsUI.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -333,6 +337,10 @@ PrefabInstance:
       propertyPath: starsPickup.Array.data[2]
       value: 
       objectReference: {fileID: 831523720}
+    - target: {fileID: 3188379771981607804, guid: 3fdd332814c5a69418a189c2e7a2c364, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3188379772704050294, guid: 3fdd332814c5a69418a189c2e7a2c364, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -466,7 +474,7 @@ PrefabInstance:
     - target: {fileID: 7552683143559868133, guid: 73d260febcb5b3a43b8692cd01f3b934, type: 3}
       propertyPath: scoreScreen
       value: 
-      objectReference: {fileID: 1947999364}
+      objectReference: {fileID: 1373810496}
     - target: {fileID: 7552683143559868133, guid: 73d260febcb5b3a43b8692cd01f3b934, type: 3}
       propertyPath: levelToUnlock
       value: 2
@@ -4472,7 +4480,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6404478548398420877, guid: 8ece35597a993324eba6a6a55f3a3613, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.63
+      value: 3.168
       objectReference: {fileID: 0}
     - target: {fileID: 6404478548398420877, guid: 8ece35597a993324eba6a6a55f3a3613, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4700,6 +4708,11 @@ Rigidbody2D:
 Transform:
   m_CorrespondingSourceObject: {fileID: 301857726789970098, guid: 4bf2fe838b27a024e93307b451171ff4, type: 3}
   m_PrefabInstance: {fileID: 1617551788}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1373810496 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3188379771981607804, guid: 3fdd332814c5a69418a189c2e7a2c364, type: 3}
+  m_PrefabInstance: {fileID: 264190638}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1426923180
 PrefabInstance:
@@ -5098,7 +5111,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6404478548398420877, guid: 8ece35597a993324eba6a6a55f3a3613, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.94
+      value: -0.624
       objectReference: {fileID: 0}
     - target: {fileID: 6404478548398420877, guid: 8ece35597a993324eba6a6a55f3a3613, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5306,17 +5319,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ceac7946906bedf4dae22b7b8e664c56, type: 3}
---- !u!114 &1947999364 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3188379771981607802, guid: 3fdd332814c5a69418a189c2e7a2c364, type: 3}
-  m_PrefabInstance: {fileID: 264190638}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1975324394 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8222113231235264770, guid: 3fdd332814c5a69418a189c2e7a2c364, type: 3}

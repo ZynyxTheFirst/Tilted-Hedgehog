@@ -9,10 +9,23 @@ public class PickupStar : MonoBehaviour
     public LayerMask PlayerMask;
     public float CollectRadius = 0.5f;
     private int starsCollected;
+    private bool isCollected = false;
+    private string saveKey;
 
     private void Start()
     {
-        starsCollected = PlayerPrefs.GetInt("StarsCollected");
+        // Skapar ett unikt saveKey för varje stjärnobjekt.
+        saveKey = "Star_" + gameObject.name;
+
+        if (PlayerPrefs.HasKey(saveKey))
+        {
+            isCollected = PlayerPrefs.GetInt(saveKey) == 1;
+
+            if (isCollected)
+                gameObject.SetActive(false);
+                //Destroy(this.gameObject);
+        }
+
         SCR = FindObjectOfType<Scorehandler>();
     }
 
@@ -21,12 +34,20 @@ public class PickupStar : MonoBehaviour
         if (Physics2D.OverlapCircle(this.transform.position, CollectRadius, PlayerMask))
         {
             PlayerPrefs.SetInt("StarsCollected", starsCollected +1);
+
+            isCollected = true;
             SCR.FoundStar();
-            Destroy(this.gameObject);
+            // Spara om stjärnarn har blivit upplockad eller inte.
+            PlayerPrefs.SetInt(saveKey, 1);
+            PlayerPrefs.Save();
+            gameObject.SetActive(false);
+            //Destroy(this.gameObject);
         }
         
     }
-
+    public bool IsCollected(){
+        return isCollected;
+    }
     private void OnDrawGizmosSelected()
     {
         // Set the color of the Gizmos to red

@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu/Main Menu.unity
     guid: e44a9cd3cb40cd043961004d600902e3
   - enabled: 1
+    path: Assets/Scenes/TestNewBoard.unity
+    guid: a4322b8daf2566b4f89f162a35c89e1c
+  - enabled: 1
     path: Assets/Scenes/NewLevels/Level1New - Movement Tutorial.unity
     guid: f40c2c2ae22ad8d4d8d9282d5a0d13b0
   - enabled: 1
@@ -26,9 +29,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu/Level Select.unity
     guid: fc41288a46ba9b347a384d0f3abfeb37
-  - enabled: 1
-    path: Assets/Scenes/TestNewBoard.unity
-    guid: a4322b8daf2566b4f89f162a35c89e1c
   - enabled: 1
     path: Assets/Scenes/Intro Level.unity
     guid: 48715fa7f57b14b448a4d86ec4c8d7e5

@@ -3,16 +3,30 @@ using UnityEngine.UI;
 
 public class EndGoal : MonoBehaviour
 {
-    [SerializeField] Image scoreScreen;
+    [SerializeField] GameObject scoreScreen;
     // [SerializeField] int levelToUnlock = 0;
+    private GameObject[] starsUI;
+    private GameObject[] starsPickup;
+    private Sprite starCollected;
 
     void Start()
     {
+        for(int i = 0; i < 3; i++){
+            starsUI = scoreScreen.GetComponent<StarHandler>().starsUI;
+        }
+        starCollected = scoreScreen.GetComponent<StarHandler>().starCollected;
+        starsPickup = scoreScreen.GetComponent<StarHandler>().starsPickup;
+        
         scoreScreen.transform.localScale = Vector2.zero;
     }
 
     public void OpenScoreScreen()
     {   
+        for(int i = 0; i < starsPickup.Length; i++){
+            if(starsPickup[i].GetComponent<PickupStar>().IsCollected()){
+                starsUI[i].GetComponent<Image>().sprite = starCollected;
+            }
+        }
         scoreScreen.transform.LeanScale(Vector2.one, 0.5f);
     }
 

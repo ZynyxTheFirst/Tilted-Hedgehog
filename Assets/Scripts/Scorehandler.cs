@@ -5,9 +5,12 @@ using TMPro;
 
 public class Scorehandler : MonoBehaviour
 {
-    public int starScore;
+    private int starScore;
     public TMP_Text scoreText;
-
+    private void Start()
+    {
+        starScore = PlayerPrefs.GetInt("StarScore");
+    }
     private void Update()
     {
         scoreText.text = "" + starScore;

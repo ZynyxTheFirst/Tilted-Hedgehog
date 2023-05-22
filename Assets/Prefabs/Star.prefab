@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6404478548398420876}
   - component: {fileID: 6404478548398420879}
   - component: {fileID: 6404478548398420878}
+  - component: {fileID: 8406809899569289100}
   m_Layer: 0
   m_Name: Star
   m_TagString: Untagged
@@ -114,8 +115,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf82dba1b02e9914e89761937605e71d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SCR: {fileID: 4668587052787766438, guid: ba13ac6d28408df43aaad583bc54a23f, type: 3}
+  SCR: {fileID: 8406809899569289100}
   PlayerMask:
     serializedVersion: 2
     m_Bits: 64
   CollectRadius: 0.35
+--- !u!114 &8406809899569289100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6404478548398420873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da6cc4aa645376f4486592f011e9c005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 0}

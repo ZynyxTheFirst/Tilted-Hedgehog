@@ -4,9 +4,10 @@ using UnityEngine.UI;
 public class EndGoal : MonoBehaviour
 {
     [SerializeField] GameObject scoreScreen;
+    public GameObject starUI;
     // [SerializeField] int levelToUnlock = 0;
     private GameObject joystickArea;
-    public GameObject[] starsUI;
+    public GameObject[] starsScoreScreen;
     private GameObject[] starsPickup;
     private Sprite starCollected;
     private int amountCollected;
@@ -36,7 +37,7 @@ public class EndGoal : MonoBehaviour
 
         for (int i = 0; i < amountCollected; i++)
         {
-                starsUI[i].GetComponent<Image>().sprite = starCollected;
+            starsScoreScreen[i].GetComponent<Image>().sprite = starCollected;
         }
 
 
@@ -53,6 +54,7 @@ public class EndGoal : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             OpenScoreScreen();
+            starUI.SetActive(true);
             GetComponent<SpriteRenderer>().enabled = false;
             Pause.PauseGame();
             //PlayerPrefs.SetInt("LevelsUnlocked", levelToUnlock);

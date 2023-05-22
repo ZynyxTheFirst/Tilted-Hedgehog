@@ -5,6 +5,7 @@ public class EndGoal : MonoBehaviour
 {
     [SerializeField] Image scoreScreen;
     [SerializeField] int levelToUnlock = 0;
+    [SerializeField] private GameObject gameObject;
 
     void Start()
     {
@@ -25,7 +26,9 @@ public class EndGoal : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            print("the end");
             OpenScoreScreen();
+            gameObject.SetActive(false);
             GetComponent<SpriteRenderer>().enabled = false;
             Pause.PauseGame();
             PlayerPrefs.SetInt("LevelsUnlocked", levelToUnlock);

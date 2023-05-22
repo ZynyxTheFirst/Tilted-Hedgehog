@@ -319,7 +319,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 421670217, guid: 3fdd332814c5a69418a189c2e7a2c364, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -19.99939
+      value: -19.999268
       objectReference: {fileID: 0}
     - target: {fileID: 421670217, guid: 3fdd332814c5a69418a189c2e7a2c364, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -819,6 +819,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1571953777}
     m_Modifications:
+    - target: {fileID: 7552683143559868133, guid: 73d260febcb5b3a43b8692cd01f3b934, type: 3}
+      propertyPath: gameObject
+      value: 
+      objectReference: {fileID: 1013152103}
     - target: {fileID: 7552683143559868133, guid: 73d260febcb5b3a43b8692cd01f3b934, type: 3}
       propertyPath: scoreScreen
       value: 

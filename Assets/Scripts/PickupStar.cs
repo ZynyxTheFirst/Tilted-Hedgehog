@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PickupStar : MonoBehaviour
 {
@@ -15,7 +16,7 @@ public class PickupStar : MonoBehaviour
     private void Start()
     {
         // Skapar ett unikt saveKey för varje stjärnobjekt.
-        saveKey = "Star_" + gameObject.name;
+        saveKey = gameObject.name + SceneManager.GetActiveScene().ToString();
 
         if (PlayerPrefs.HasKey(saveKey))
         {

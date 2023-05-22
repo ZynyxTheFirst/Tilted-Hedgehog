@@ -13,10 +13,4 @@ public class ScoreScreenText : MonoBehaviour
     {
         levelText.GetComponent<TextMeshProUGUI>().text = "Level " + SceneManager.GetActiveScene().buildIndex;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

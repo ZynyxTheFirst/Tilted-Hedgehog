@@ -887,6 +887,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 694915713}
     m_Modifications:
+    - target: {fileID: 1663815834092151200, guid: ba4f6b277f748404d880e6accd2cfe9f, type: 3}
+      propertyPath: m_Name
+      value: Star1
+      objectReference: {fileID: 0}
     - target: {fileID: 2821168358994994247, guid: ba4f6b277f748404d880e6accd2cfe9f, type: 3}
       propertyPath: scoreScreen
       value: 
@@ -919,6 +923,10 @@ PrefabInstance:
       propertyPath: starsUI.Array.data[5]
       value: 
       objectReference: {fileID: 264190639}
+    - target: {fileID: 4498468752246442203, guid: ba4f6b277f748404d880e6accd2cfe9f, type: 3}
+      propertyPath: m_Name
+      value: Star3
+      objectReference: {fileID: 0}
     - target: {fileID: 5147279939258224711, guid: ba4f6b277f748404d880e6accd2cfe9f, type: 3}
       propertyPath: movementJoystick
       value: 
@@ -970,6 +978,14 @@ PrefabInstance:
     - target: {fileID: 5761872904486292407, guid: ba4f6b277f748404d880e6accd2cfe9f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5761872906458430528, guid: ba4f6b277f748404d880e6accd2cfe9f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6163558567195546813, guid: ba4f6b277f748404d880e6accd2cfe9f, type: 3}
+      propertyPath: m_Name
+      value: Star2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba4f6b277f748404d880e6accd2cfe9f, type: 3}

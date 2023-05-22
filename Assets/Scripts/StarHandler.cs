@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class StarHandler : MonoBehaviour
 {
-    public int amountCollected;
+    //public int amountCollected;
     public Sprite starCollected;
     public GameObject[] starsUI;
     public GameObject[] starsPickup;
@@ -40,7 +40,8 @@ public class StarHandler : MonoBehaviour
 
     private void Update()
     {
-        amountCollected = PlayerPrefs.GetInt("StarsCollected");
+        //amountCollected = PlayerPrefs.GetInt("StarsCollected");
+        /*
         
         for (int i = 0; i < starsPickup.Length; i++)
         {
@@ -48,5 +49,6 @@ public class StarHandler : MonoBehaviour
                 starsUI[i].GetComponent<Image>().sprite = starCollected;
             }
         }
+        */
     }
 }

@@ -5,15 +5,13 @@ public class EndGoal : MonoBehaviour
 {
     [SerializeField] GameObject scoreScreen;
     // [SerializeField] int levelToUnlock = 0;
-    private GameObject[] starsUI;
+    public GameObject[] starsUI;
     private GameObject[] starsPickup;
     private Sprite starCollected;
+    private int amountCollected;
 
     void Start()
     {
-        for(int i = 0; i < 3; i++){
-            starsUI = scoreScreen.GetComponent<StarHandler>().starsUI;
-        }
         starCollected = scoreScreen.GetComponent<StarHandler>().starCollected;
         starsPickup = scoreScreen.GetComponent<StarHandler>().starsPickup;
         
@@ -21,12 +19,21 @@ public class EndGoal : MonoBehaviour
     }
 
     public void OpenScoreScreen()
-    {   
-        for(int i = 0; i < starsPickup.Length; i++){
+    {
+
+        for (int i = 0; i < starsPickup.Length; i++){
             if(starsPickup[i].GetComponent<PickupStar>().IsCollected()){
-                starsUI[i].GetComponent<Image>().sprite = starCollected;
+                amountCollected++;
+                //starsUI[i].GetComponent<Image>().sprite = starCollected;
             }
         }
+
+        for (int i = 0; i < amountCollected; i++)
+        {
+                starsUI[i].GetComponent<Image>().sprite = starCollected;
+        }
+
+
         scoreScreen.transform.LeanScale(Vector2.one, 0.5f);
     }
 

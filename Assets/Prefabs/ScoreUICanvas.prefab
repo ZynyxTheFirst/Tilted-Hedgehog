@@ -868,7 +868,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 26.4
+  m_fontSize: 72
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1216,12 +1216,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amountCollected: 0
-  currentLevel: 0
   starCollected: {fileID: 21300000, guid: 20863819369ed0641af05d0e51f04a91, type: 3}
-  stars:
+  starsUI:
   - {fileID: 3188379772951897616}
   - {fileID: 3188379773939241956}
   - {fileID: 3188379773720096722}
+  starsPickup:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  resetAllPlayerPref: 0
 --- !u!1 &3188379772704050298
 GameObject:
   m_ObjectHideFlags: 0

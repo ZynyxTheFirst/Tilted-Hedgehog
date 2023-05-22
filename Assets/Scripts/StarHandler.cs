@@ -8,7 +8,6 @@ public class StarHandler : MonoBehaviour
 {
     //public int amountCollected;
     public Sprite starCollected;
-    public GameObject[] starsUI;
     public GameObject[] starsPickup;
 
     private string currentLevelStars;

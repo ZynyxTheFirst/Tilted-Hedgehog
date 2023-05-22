@@ -996,7 +996,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1663815834092151200, guid: ba4f6b277f748404d880e6accd2cfe9f, type: 3}
       propertyPath: m_Name
-      value: Star1
+      value: Star123
       objectReference: {fileID: 0}
     - target: {fileID: 1663815834092151207, guid: ba4f6b277f748404d880e6accd2cfe9f, type: 3}
       propertyPath: SCR

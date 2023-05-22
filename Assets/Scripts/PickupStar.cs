@@ -16,7 +16,8 @@ public class PickupStar : MonoBehaviour
     private void Start()
     {
         // Skapar ett unikt saveKey för varje stjärnobjekt.
-        saveKey = gameObject.name + SceneManager.GetActiveScene().ToString();
+        saveKey = gameObject.name + SceneManager.GetActiveScene().name;
+        Debug.Log(SceneManager.GetActiveScene().name);
 
         if (PlayerPrefs.HasKey(saveKey))
         {

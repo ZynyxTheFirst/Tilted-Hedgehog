@@ -100,7 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   respawnPoint: {fileID: 0}
-  time: 2
+  time: 0.2
   moveSpeed: 2
   minSpeed: 2
 --- !u!58 &8465603088524723682

@@ -5,6 +5,7 @@ public class EndGoal : MonoBehaviour
 {
     [SerializeField] GameObject scoreScreen;
     // [SerializeField] int levelToUnlock = 0;
+    private GameObject joystickArea;
     public GameObject[] starsUI;
     private GameObject[] starsPickup;
     private Sprite starCollected;
@@ -12,6 +13,7 @@ public class EndGoal : MonoBehaviour
 
     void Start()
     {
+        joystickArea = GameObject.Find("JoystickArea");
         starCollected = scoreScreen.GetComponent<StarHandler>().starCollected;
         starsPickup = scoreScreen.GetComponent<StarHandler>().starsPickup;
         
@@ -20,6 +22,10 @@ public class EndGoal : MonoBehaviour
 
     public void OpenScoreScreen()
     {
+        if(joystickArea != null) { 
+            joystickArea.SetActive(false);
+        }
+        
 
         for (int i = 0; i < starsPickup.Length; i++){
             if(starsPickup[i].GetComponent<PickupStar>().IsCollected()){

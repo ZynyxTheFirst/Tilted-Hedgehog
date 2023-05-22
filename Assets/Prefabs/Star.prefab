@@ -114,7 +114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf82dba1b02e9914e89761937605e71d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SCR: {fileID: 0}
+  SCR: {fileID: 4668587052787766438, guid: ba13ac6d28408df43aaad583bc54a23f, type: 3}
   PlayerMask:
     serializedVersion: 2
     m_Bits: 64

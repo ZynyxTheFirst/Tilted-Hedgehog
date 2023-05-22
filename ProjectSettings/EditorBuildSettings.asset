@@ -8,12 +8,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu/Main Menu.unity
     guid: e44a9cd3cb40cd043961004d600902e3
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TestNewBoard.unity
     guid: a4322b8daf2566b4f89f162a35c89e1c
+  - enabled: 0
+    path: Assets/Scenes/Intro Level.unity
+    guid: 48715fa7f57b14b448a4d86ec4c8d7e5
+  - enabled: 0
+    path: Assets/Scenes/Menu/Level Select.unity
+    guid: fc41288a46ba9b347a384d0f3abfeb37
   - enabled: 1
-    path: Assets/Scenes/NewLevels/Level1New - Movement Tutorial.unity
-    guid: f40c2c2ae22ad8d4d8d9282d5a0d13b0
+    path: Assets/Scenes/NewLevels/Level1New + movement tut.unity
+    guid: 2b3252841ea2db949b26e0fc11e58ef8
   - enabled: 1
     path: Assets/Scenes/NewLevels/Level2New - Deathzone Tutorial.unity
     guid: fc1ce96b18a1e4a4f9ad7d106a6b3444
@@ -26,12 +32,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/NewLevels/Level5New - Door and key Tutorial.unity
     guid: 19bbd70a2c98d4341bef39f652faa7ac
-  - enabled: 1
-    path: Assets/Scenes/Menu/Level Select.unity
-    guid: fc41288a46ba9b347a384d0f3abfeb37
-  - enabled: 1
-    path: Assets/Scenes/Intro Level.unity
-    guid: 48715fa7f57b14b448a4d86ec4c8d7e5
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 9272b556d077c6740b412c0dc48a3170, type: 2}
     com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: cb98cf92434d0b04e849615e1219485f, type: 2}

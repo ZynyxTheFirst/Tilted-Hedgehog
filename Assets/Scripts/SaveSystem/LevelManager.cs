@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class LevelManager : MonoBehaviour
 {
 
-    int levelsUnlocked;
+    public int levelsUnlocked = 1;
     public Button[] buttons;
 
     // Start is called before the first frame update

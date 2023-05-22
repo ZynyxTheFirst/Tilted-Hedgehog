@@ -3,16 +3,43 @@ using UnityEngine.UI;
 
 public class EndGoal : MonoBehaviour
 {
-    [SerializeField] Image scoreScreen;
-    [SerializeField] int levelToUnlock = 0;
+    [SerializeField] GameObject scoreScreen;
+    // [SerializeField] int levelToUnlock = 0;
+    private GameObject joystickArea;
+    public GameObject[] starsUI;
+    private GameObject[] starsPickup;
+    private Sprite starCollected;
+    private int amountCollected;
 
     void Start()
     {
+        joystickArea = GameObject.Find("JoystickArea");
+        starCollected = scoreScreen.GetComponent<StarHandler>().starCollected;
+        starsPickup = scoreScreen.GetComponent<StarHandler>().starsPickup;
+        
         scoreScreen.transform.localScale = Vector2.zero;
     }
 
     public void OpenScoreScreen()
-    {   
+    {
+        if(joystickArea != null) { 
+            joystickArea.SetActive(false);
+        }
+        
+
+        for (int i = 0; i < starsPickup.Length; i++){
+            if(starsPickup[i].GetComponent<PickupStar>().IsCollected()){
+                amountCollected++;
+                //starsUI[i].GetComponent<Image>().sprite = starCollected;
+            }
+        }
+
+        for (int i = 0; i < amountCollected; i++)
+        {
+                starsUI[i].GetComponent<Image>().sprite = starCollected;
+        }
+
+
         scoreScreen.transform.LeanScale(Vector2.one, 0.5f);
     }
 
@@ -28,7 +55,7 @@ public class EndGoal : MonoBehaviour
             OpenScoreScreen();
             GetComponent<SpriteRenderer>().enabled = false;
             Pause.PauseGame();
-            PlayerPrefs.SetInt("LevelsUnlocked", levelToUnlock);
+            //PlayerPrefs.SetInt("LevelsUnlocked", levelToUnlock);
         }
     }
 }

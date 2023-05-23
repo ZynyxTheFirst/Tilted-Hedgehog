@@ -36,7 +36,7 @@ public class PickupStar : MonoBehaviour
 
     private void Update()
     {
-        if (Physics2D.OverlapCircle(this.transform.position, CollectRadius, PlayerMask))
+        if (Physics2D.OverlapCircle(this.transform.position, CollectRadius, PlayerMask) && isCollected == false)
         {
             PlayerPrefs.SetInt("StarsCollected", starsCollected +1);
 
@@ -45,7 +45,7 @@ public class PickupStar : MonoBehaviour
             // Spara om stjärnarn har blivit upplockad eller inte.
             PlayerPrefs.SetInt(saveKey, 1);
             PlayerPrefs.Save();
-            particleSys.Emit(10);
+            particleSys.Play();
             spriteRenderer.enabled = false;
             //gameObject.SetActive(false);
             //Destroy(this.gameObject);

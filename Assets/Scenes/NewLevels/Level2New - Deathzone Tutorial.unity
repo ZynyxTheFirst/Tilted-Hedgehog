@@ -420,6 +420,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1704162796470585874, guid: 3fdd332814c5a69418a189c2e7a2c364, type: 3}
+      propertyPath: starsPickup.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1704162796470585874, guid: 3fdd332814c5a69418a189c2e7a2c364, type: 3}
       propertyPath: starsPickup.Array.data[0]
       value: 
       objectReference: {fileID: 1169919941}
@@ -2663,7 +2667,7 @@ PrefabInstance:
     - target: {fileID: 7529695187226554636, guid: 1c7eb98a8f95c3545b714aee0d56a111, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 3286163911610860551, guid: 84653ef2b11426a448c0b6a271ace2a1, type: 3}
+      objectReference: {fileID: 21300000, guid: b1d339857192b1549b8137862a9040e0, type: 3}
     - target: {fileID: 7552683143559868134, guid: 1c7eb98a8f95c3545b714aee0d56a111, type: 3}
       propertyPath: m_RootOrder
       value: 3

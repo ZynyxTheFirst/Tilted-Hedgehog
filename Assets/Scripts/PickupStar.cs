@@ -12,7 +12,7 @@ public class PickupStar : MonoBehaviour
     private int starsCollected;
     private bool isCollected = false;
     private string saveKey;
-    //[SerializeField] private AudioSource starSound;
+    public AudioClip pickupSound;
 
     private void Start()
     {
@@ -35,7 +35,7 @@ public class PickupStar : MonoBehaviour
     {
         if (Physics2D.OverlapCircle(this.transform.position, CollectRadius, PlayerMask))
         {
-            //starSound.Play();
+            
             PlayerPrefs.SetInt("StarsCollected", starsCollected +1);
 
             isCollected = true;
@@ -58,6 +58,17 @@ public class PickupStar : MonoBehaviour
 
         // Draw a wire sphere with the same radius as the circle collider
         Gizmos.DrawWireSphere(transform.position, CollectRadius);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            AudioSource.PlayClipAtPoint(pickupSound, transform.position);
+            // Add your code to handle star pickup here
+            // For example, you can disable or destroy the star object
+            gameObject.SetActive(false);
+        }
     }
 
 }

@@ -12,7 +12,7 @@ public class PickupStar : MonoBehaviour
     private int starsCollected;
     private bool isCollected = false;
     private string saveKey;
-    public AudioClip pickupSound;
+    [SerializeField] private AudioSource collectionSoundEffect;
 
     private void Start()
     {
@@ -60,13 +60,10 @@ public class PickupStar : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, CollectRadius);
     }
 
+
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
-        {
-            AudioSource.PlayClipAtPoint(pickupSound, transform.position);
-            gameObject.SetActive(false);
-        }
+        collectionSoundEffect.Play();
     }
 
 }

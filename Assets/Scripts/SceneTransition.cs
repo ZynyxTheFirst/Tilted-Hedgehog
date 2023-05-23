@@ -37,7 +37,7 @@ public class SceneTransition : MonoBehaviour
         {
             centerReached = true;
             // Object has reached the center, you can add any additional logic here
-            Debug.Log("Object has reached the center!");
+            //Debug.Log("Object has reached the center!");
         }
         else centerReached = false;
     }

@@ -20,7 +20,7 @@ public class PickupStar : MonoBehaviour
         particleSys = GetComponent<ParticleSystem>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         // Skapar ett unikt saveKey för varje stjärnobjekt.
-        saveKey = gameObject.name + SceneManager.GetActiveScene().name;
+        saveKey = transform.parent.name + SceneManager.GetActiveScene().name;
 
         if (PlayerPrefs.HasKey(saveKey))
         {

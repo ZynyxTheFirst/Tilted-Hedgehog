@@ -12,13 +12,15 @@ public class EndGoal : MonoBehaviour
     private GameObject[] starsPickup;
     private Sprite starCollected;
     private int amountCollected;
-    private bool animatorOff = true;
+    //private bool animatorOff = true;
     
     private void Update() {
+        /*
         if(SceneTransition.centerReached && animatorOff){
             GetComponent<Animator>().enabled = true;
             animatorOff = false;
         }
+        */
     }
 
     void Start()
@@ -55,6 +57,7 @@ public class EndGoal : MonoBehaviour
 
 
         scoreScreen.transform.LeanScale(Vector2.one, 0.5f);
+        Debug.Log("Open score screen now");
     }
 
     public void CloseScoreScreen()

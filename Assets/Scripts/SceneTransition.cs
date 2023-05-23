@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SceneTransition : MonoBehaviour
@@ -9,17 +7,28 @@ public class SceneTransition : MonoBehaviour
 
     private Vector3 center;
     private Vector3 targetPosition;
+    private Vector3 offsetPosition;
 
     public static bool centerReached;
+    public static bool startSlideOut;
+    public static bool endReached;
+
+    private void Awake()
+    {
+        endReached = false;
+        centerReached = false;
+        startSlideOut = false;
+    }
 
     private void Start()
     {
-        centerReached = false;
         // Calculate the target position at the center of the screen
         float screenWidth = Screen.width;
         float screenHeight = Screen.height;
         center = Camera.main.ScreenToWorldPoint(new Vector3(screenWidth / 2f, screenHeight / 2f, 0f));
         center.z = transform.position.z; // Maintain the object's original z position
+
+        offsetPosition = new Vector3(center.x + -initialOffset, center.y, center.z);
 
         // Set the initial position of the object with an offset to the left
         Vector3 initialPosition = new Vector3(center.x + initialOffset, center.y, center.z);
@@ -33,21 +42,29 @@ public class SceneTransition : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
 
         // Check if the object has reached the target position
-        if (transform.position == targetPosition)
+        if (transform.position == center)
         {
             centerReached = true;
             // Object has reached the center, you can add any additional logic here
             Debug.Log("Object has reached the center!");
         }
         else centerReached = false;
+
+        if (startSlideOut)
+        {
+            SlideOut();
+        }
+
+        if(transform.position == offsetPosition)
+        {
+            endReached = true;
+        }
     }
 
-    public void SlideOut()
+    private void SlideOut()
     {
         centerReached = false;
-        Vector3 offset = new Vector3(center.x + -initialOffset, center.y, center.z);
-        targetPosition = offset;
-
+        targetPosition = offsetPosition;
     }
 
     private void SlideIn()

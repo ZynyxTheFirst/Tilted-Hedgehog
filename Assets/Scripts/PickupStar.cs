@@ -12,6 +12,7 @@ public class PickupStar : MonoBehaviour
     private int starsCollected;
     private bool isCollected = false;
     private string saveKey;
+    //[SerializeField] private AudioSource starSound;
 
     private void Start()
     {
@@ -34,6 +35,7 @@ public class PickupStar : MonoBehaviour
     {
         if (Physics2D.OverlapCircle(this.transform.position, CollectRadius, PlayerMask))
         {
+            //starSound.Play();
             PlayerPrefs.SetInt("StarsCollected", starsCollected +1);
 
             isCollected = true;

@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="461ffe18-9788-48fb-a08e-96ba425c657f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Prefabs/ScoreUICanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Prefabs/ScoreUICanvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prefabs/Character.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Prefabs/Character.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scenes/NewLevels/Level1New + movement tut.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/NewLevels/Level1New + movement tut.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scenes/NewLevels/Level2New - Deathzone Tutorial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/NewLevels/Level2New - Deathzone Tutorial.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scenes/NewLevels/Level3New - Blåsbälg Tutorial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/NewLevels/Level3New - Blåsbälg Tutorial.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scenes/NewLevels/Level4New - Trampoline Tutorial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/NewLevels/Level4New - Trampoline Tutorial.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scenes/NewLevels/Level5New - Door and key Tutorial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/NewLevels/Level5New - Door and key Tutorial.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Scripts.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Scripts.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProjectSettings/TimelineSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProjectSettings/TimelineSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UserSettings/Search.settings" beforeDir="false" afterPath="$PROJECT_DIR$/../../UserSettings/Search.settings" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,21 +24,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+      <changelist id="461ffe18-9788-48fb-a08e-96ba425c657f" name="Changes" comment="" />
       <created>1684740180920</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1684740180920</updated>
       <workItem from="1684740194383" duration="51000" />
+      <workItem from="1684837097148" duration="14000" />
+      <workItem from="1684837209213" duration="41000" />
     </task>
     <servers />
   </component>

@@ -13,6 +13,7 @@ public class PickupStar : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private int starsCollected;
     private bool isCollected = false;
+    private bool animatorOff = true;
     private string saveKey;
 
     private void Start()
@@ -36,6 +37,11 @@ public class PickupStar : MonoBehaviour
 
     private void Update()
     {
+        if(SceneTransition.centerReached && animatorOff){
+            GetComponent<Animator>().enabled = true;
+            animatorOff = false;
+        }
+        
         if (Physics2D.OverlapCircle(this.transform.position, CollectRadius, PlayerMask) && isCollected == false)
         {
             PlayerPrefs.SetInt("StarsCollected", starsCollected +1);

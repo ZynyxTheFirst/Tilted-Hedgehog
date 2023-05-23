@@ -12,25 +12,23 @@ public class EndGoal : MonoBehaviour
     private GameObject[] starsPickup;
     private Sprite starCollected;
     private int amountCollected;
+    private bool animatorOff = true;
+    
+    private void Update() {
+        if(SceneTransition.centerReached && animatorOff){
+            GetComponent<Animator>().enabled = true;
+            animatorOff = false;
+        }
+    }
 
-    private bool closing;
     void Start()
     {
-        closing = false;
         player = GameObject.Find("Character");
         joystickArea = GameObject.Find("JoystickArea");
         starCollected = scoreScreen.GetComponent<StarHandler>().starCollected;
         starsPickup = scoreScreen.GetComponent<StarHandler>().starsPickup;
         
         scoreScreen.transform.localScale = Vector2.zero;
-    }
-
-    private void Update()
-    {
-        if (SceneTransition.transitioning && !closing)
-        {
-            CloseScoreScreen();
-        }
     }
 
     public void OpenScoreScreen()
@@ -62,7 +60,6 @@ public class EndGoal : MonoBehaviour
     public void CloseScoreScreen()
     {
         scoreScreen.transform.LeanScale(Vector2.zero, 1f).setEaseInBack();
-        closing = true;
     }
 
     private void OnTriggerEnter2D(Collider2D other) 

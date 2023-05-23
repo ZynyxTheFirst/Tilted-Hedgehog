@@ -6,8 +6,17 @@ public class TramplolineNew : MonoBehaviour
 {
     public float launchForce = 1f;
     public Rigidbody2D rb;
+    public AudioClip audioClip;
+    public AudioSource audioSource;
     private Animator trampolineAnimator;
-
+    private void Start()
+    {
+        if(audioClip != null)
+        {
+            audioSource.clip = audioClip;
+        }
+        
+    }
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
@@ -15,6 +24,7 @@ public class TramplolineNew : MonoBehaviour
         trampolineAnimator = collision.GetComponent<Animator>();
         //trampolineAnimator.SetBool("isTriggered", true);
         trampolineAnimator.Play("anim_trampolineGreen");
+        audioSource.Play();
 
         var opposite = -rb.velocity;
         if (collision.gameObject.CompareTag("GreenSurface"))

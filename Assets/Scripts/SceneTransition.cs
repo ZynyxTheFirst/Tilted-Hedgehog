@@ -10,14 +10,12 @@ public class SceneTransition : MonoBehaviour
     private Vector3 offsetPosition;
 
     public static bool centerReached;
-    public static bool startSlideOut;
-    public static bool endReached;
+    public static bool transitioning;
 
     private void Awake()
     {
-        endReached = false;
+        transitioning = false;
         centerReached = false;
-        startSlideOut = false;
     }
 
     private void Start()
@@ -45,24 +43,18 @@ public class SceneTransition : MonoBehaviour
         if (transform.position == center)
         {
             centerReached = true;
-            // Object has reached the center, you can add any additional logic here
-            Debug.Log("Object has reached the center!");
         }
         else centerReached = false;
 
-        if (startSlideOut)
-        {
-            SlideOut();
-        }
-
         if(transform.position == offsetPosition)
         {
-            endReached = true;
+            GoToNextLevel.LoadNextLevel();
         }
     }
 
-    private void SlideOut()
+    public void SlideOut()
     {
+        transitioning = true;
         centerReached = false;
         targetPosition = offsetPosition;
     }

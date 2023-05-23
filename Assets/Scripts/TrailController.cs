@@ -14,7 +14,13 @@ public class TrailController : MonoBehaviour
     {
         if (SceneTransition.centerReached)
         {
+            trailRenderer.enabled = true;
             trailRenderer.emitting = true;
+        }
+        else
+        {
+            trailRenderer.enabled = false;
+            trailRenderer.emitting = false;
         }
     }
 }

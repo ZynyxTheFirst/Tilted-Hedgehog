@@ -1019,14 +1019,14 @@ PrefabInstance:
     - target: {fileID: 3188379773132028553, guid: 3fdd332814c5a69418a189c2e7a2c364, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1988247589}
+      objectReference: {fileID: 1211569622}
     - target: {fileID: 3188379773132028553, guid: 3fdd332814c5a69418a189c2e7a2c364, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SlideOut
+      value: LoadNextLevel
       objectReference: {fileID: 0}
     - target: {fileID: 3188379773132028553, guid: 3fdd332814c5a69418a189c2e7a2c364, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: SceneTransition, Assembly-CSharp
+      value: GoToNextLevel, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4121607538659898001, guid: 3fdd332814c5a69418a189c2e7a2c364, type: 3}
       propertyPath: m_text
@@ -1048,8 +1048,7 @@ PrefabInstance:
       propertyPath: starScore
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3188379773132028548, guid: 3fdd332814c5a69418a189c2e7a2c364, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3fdd332814c5a69418a189c2e7a2c364, type: 3}
 --- !u!114 &1132915286 stripped
 MonoBehaviour:
@@ -1163,6 +1162,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1211569622 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3188379773132028548, guid: 3fdd332814c5a69418a189c2e7a2c364, type: 3}
+  m_PrefabInstance: {fileID: 1132915284}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dec1dbc1bcf46ea4f8ce40495c84eb5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1281723625
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -43,9 +43,10 @@ GameObject:
   - component: {fileID: 1912678918113757483}
   - component: {fileID: 5858169657847471544}
   - component: {fileID: 6533602173027446607}
+  - component: {fileID: 7632038993347749654}
+  - component: {fileID: 636976462574218242}
   - component: {fileID: 4758223432464505447}
   - component: {fileID: 7938629845687674552}
-  - component: {fileID: 636976462574218242}
   - component: {fileID: 4206627621330689765}
   m_Layer: 0
   m_Name: StarSprite
@@ -62,7 +63,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8357560797874929561}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.033, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -137,36 +138,27 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.35
---- !u!114 &4758223432464505447
-MonoBehaviour:
+--- !u!95 &7632038993347749654
+Animator:
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8357560797874929561}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf82dba1b02e9914e89761937605e71d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SCR: {fileID: 7938629845687674552}
-  PlayerMask:
-    serializedVersion: 2
-    m_Bits: 64
-  CollectRadius: 0.35
---- !u!114 &7938629845687674552
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8357560797874929561}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da6cc4aa645376f4486592f011e9c005, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5433f94a44450a342ae3a0c149e7bfae, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!198 &636976462574218242
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -4933,6 +4925,36 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!114 &4758223432464505447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8357560797874929561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf82dba1b02e9914e89761937605e71d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SCR: {fileID: 7938629845687674552}
+  PlayerMask:
+    serializedVersion: 2
+    m_Bits: 64
+  CollectRadius: 0.35
+--- !u!114 &7938629845687674552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8357560797874929561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da6cc4aa645376f4486592f011e9c005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 0}
 --- !u!199 &4206627621330689765
 ParticleSystemRenderer:
   serializedVersion: 6

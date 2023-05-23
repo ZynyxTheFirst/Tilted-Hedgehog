@@ -2637,6 +2637,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1373350705}
     - target: {fileID: 3609671349536862414, guid: 1c7eb98a8f95c3545b714aee0d56a111, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3609671349536862414, guid: 1c7eb98a8f95c3545b714aee0d56a111, type: 3}
       propertyPath: scoreScreen
       value: 
       objectReference: {fileID: 1807925151}
@@ -2656,6 +2660,10 @@ PrefabInstance:
       propertyPath: starsScoreScreen.Array.data[2]
       value: 
       objectReference: {fileID: 1388623822}
+    - target: {fileID: 7529695187226554636, guid: 1c7eb98a8f95c3545b714aee0d56a111, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 3286163911610860551, guid: 84653ef2b11426a448c0b6a271ace2a1, type: 3}
     - target: {fileID: 7552683143559868134, guid: 1c7eb98a8f95c3545b714aee0d56a111, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -3348,6 +3356,10 @@ PrefabInstance:
     - target: {fileID: 301857726789970102, guid: 4bf2fe838b27a024e93307b451171ff4, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 301857726789970102, guid: 4bf2fe838b27a024e93307b451171ff4, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 301857726789970103, guid: 4bf2fe838b27a024e93307b451171ff4, type: 3}
       propertyPath: m_Constraints

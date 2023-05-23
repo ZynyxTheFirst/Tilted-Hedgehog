@@ -12,6 +12,7 @@ public class KillPlayer : MonoBehaviour
     public float minSpeed = 2f;
     private Transform deathzoneTransform;
     private Animator playerAnimator;
+    [SerializeField] private AudioSource deathSoundEffect;
 
 
     //Sends you to checkpoint 
@@ -80,6 +81,7 @@ public class KillPlayer : MonoBehaviour
 
     private IEnumerator MovePlayerToDeathZone()
     {
+        
         Vector2 startPosition = player.transform.position;
         Vector2 targetPosition = deathzoneTransform.position;
         float distance = Vector2.Distance(startPosition, targetPosition);
@@ -105,6 +107,7 @@ public class KillPlayer : MonoBehaviour
         }
 
         player.transform.position = targetPosition;
+        deathSoundEffect.Play();
     }
 
 

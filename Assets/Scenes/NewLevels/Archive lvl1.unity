@@ -427,6 +427,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3188379772951897616, guid: 3fdd332814c5a69418a189c2e7a2c364, type: 3}
   m_PrefabInstance: {fileID: 264190638}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &629521397 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1013152106, guid: 3fdd332814c5a69418a189c2e7a2c364, type: 3}
+  m_PrefabInstance: {fileID: 264190638}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e08bf5c6382d8a48a0292ebb76b7268, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &639429625 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 998166237, guid: 3fdd332814c5a69418a189c2e7a2c364, type: 3}
@@ -703,6 +714,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1663815834092151207, guid: ba4f6b277f748404d880e6accd2cfe9f, type: 3}
+      propertyPath: pickupSound
+      value: 
+      objectReference: {fileID: 8300000, guid: e3ae4bead0884438a8f8c03b44778600, type: 3}
     - target: {fileID: 2821168358994994247, guid: ba4f6b277f748404d880e6accd2cfe9f, type: 3}
       propertyPath: scoreScreen
       value: 
@@ -723,6 +738,14 @@ PrefabInstance:
       propertyPath: starsUI.Array.data[2]
       value: 
       objectReference: {fileID: 1536776289}
+    - target: {fileID: 3480130260756741519, guid: ba4f6b277f748404d880e6accd2cfe9f, type: 3}
+      propertyPath: m_TagString
+      value: CollisionTag
+      objectReference: {fileID: 0}
+    - target: {fileID: 5147279939258224711, guid: ba4f6b277f748404d880e6accd2cfe9f, type: 3}
+      propertyPath: audioPlayer
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5147279939258224711, guid: ba4f6b277f748404d880e6accd2cfe9f, type: 3}
       propertyPath: playerSpeed
       value: 5
@@ -730,6 +753,10 @@ PrefabInstance:
     - target: {fileID: 5147279939258224711, guid: ba4f6b277f748404d880e6accd2cfe9f, type: 3}
       propertyPath: movementJoystick
       value: 
+      objectReference: {fileID: 629521397}
+    - target: {fileID: 5147279939258224711, guid: ba4f6b277f748404d880e6accd2cfe9f, type: 3}
+      propertyPath: resetAllPlayerPref
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5460089952006348504, guid: ba4f6b277f748404d880e6accd2cfe9f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -738,6 +765,10 @@ PrefabInstance:
     - target: {fileID: 5460089952006348504, guid: ba4f6b277f748404d880e6accd2cfe9f, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 5460089952006348510, guid: ba4f6b277f748404d880e6accd2cfe9f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5761872904486292393, guid: ba4f6b277f748404d880e6accd2cfe9f, type: 3}
       propertyPath: m_Name

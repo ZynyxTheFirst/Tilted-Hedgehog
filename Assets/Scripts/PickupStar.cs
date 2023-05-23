@@ -65,8 +65,6 @@ public class PickupStar : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             AudioSource.PlayClipAtPoint(pickupSound, transform.position);
-            // Add your code to handle star pickup here
-            // For example, you can disable or destroy the star object
             gameObject.SetActive(false);
         }
     }

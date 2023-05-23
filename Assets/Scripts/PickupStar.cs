@@ -9,12 +9,16 @@ public class PickupStar : MonoBehaviour
 
     public LayerMask PlayerMask;
     public float CollectRadius = 0.5f;
+    private ParticleSystem particleSys;
+    private SpriteRenderer spriteRenderer;
     private int starsCollected;
     private bool isCollected = false;
     private string saveKey;
 
     private void Start()
     {
+        particleSys = GetComponent<ParticleSystem>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
         // Skapar ett unikt saveKey för varje stjärnobjekt.
         saveKey = gameObject.name + SceneManager.GetActiveScene().name;
 
@@ -41,7 +45,9 @@ public class PickupStar : MonoBehaviour
             // Spara om stjärnarn har blivit upplockad eller inte.
             PlayerPrefs.SetInt(saveKey, 1);
             PlayerPrefs.Save();
-            gameObject.SetActive(false);
+            particleSys.Emit(10);
+            spriteRenderer.enabled = false;
+            //gameObject.SetActive(false);
             //Destroy(this.gameObject);
         }
         

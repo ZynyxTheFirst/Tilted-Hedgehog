@@ -1010,6 +1010,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1258714475}
     m_Modifications:
+    - target: {fileID: 4668587051439388173, guid: ba13ac6d28408df43aaad583bc54a23f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -3.4000015
+      objectReference: {fileID: 0}
+    - target: {fileID: 4668587051439388173, guid: ba13ac6d28408df43aaad583bc54a23f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -71.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4668587051439388173, guid: ba13ac6d28408df43aaad583bc54a23f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4668587052787766456, guid: ba13ac6d28408df43aaad583bc54a23f, type: 3}
       propertyPath: m_Name
       value: StarUI
@@ -1080,11 +1092,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4668587052787766457, guid: ba13ac6d28408df43aaad583bc54a23f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.00012207031
+      value: -80
       objectReference: {fileID: 0}
     - target: {fileID: 4668587052787766457, guid: ba13ac6d28408df43aaad583bc54a23f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -64
       objectReference: {fileID: 0}
     - target: {fileID: 4668587052787766457, guid: ba13ac6d28408df43aaad583bc54a23f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

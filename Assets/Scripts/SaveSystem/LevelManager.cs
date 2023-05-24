@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class LevelManager : MonoBehaviour
 {
@@ -17,11 +18,13 @@ public class LevelManager : MonoBehaviour
 
         for (int i = 0; i < buttons.Length; i++)
         {
+            buttons[i].GetComponentInChildren<TextMeshProUGUI>().enabled = false;
             buttons[i].interactable = false;
         }
 
         for (int i = 0; i < levelsUnlocked; i++)
         {
+            buttons[i].GetComponentInChildren<TextMeshProUGUI>().enabled = true;
             buttons[i].interactable = true;
         }
     }

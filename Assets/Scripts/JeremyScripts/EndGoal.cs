@@ -12,15 +12,15 @@ public class EndGoal : MonoBehaviour
     private GameObject[] starsPickup;
     private Sprite starCollected;
     private int amountCollected;
-    //private bool animatorOff = true;
+    private bool animatorOff = true;
     
     private void Update() {
-        /*
+        
         if(SceneTransition.centerReached && animatorOff){
             GetComponent<Animator>().enabled = true;
             animatorOff = false;
         }
-        */
+        
     }
 
     void Start()

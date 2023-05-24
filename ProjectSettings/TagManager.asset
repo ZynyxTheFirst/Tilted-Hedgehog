@@ -8,6 +8,7 @@ TagManager:
   - OrangeSurface
   - RedSurface
   - Wind
+  - CollisionTag
   layers:
   - Default
   - TransparentFX

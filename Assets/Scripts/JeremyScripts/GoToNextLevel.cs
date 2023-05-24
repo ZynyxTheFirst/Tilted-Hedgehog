@@ -1,11 +1,14 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public static class GoToNextLevel
+public class GoToNextLevel : MonoBehaviour
 {
     // Add scenes in inspector
     //[SerializeField] private List<Scene> _sceneList;
 
-    public static void LoadNextLevel(){
+    public void LoadNextLevel(){
         int currentScene = SceneManager.GetActiveScene().buildIndex;
         int sceneAmount = SceneManager.sceneCountInBuildSettings;
 
@@ -13,7 +16,7 @@ public static class GoToNextLevel
             SceneManager.LoadScene(currentScene + 1);
         }
         else{
-            debugScreenLogger.print("Last scene");
+            print("Its last scene");
         }
     }
 }

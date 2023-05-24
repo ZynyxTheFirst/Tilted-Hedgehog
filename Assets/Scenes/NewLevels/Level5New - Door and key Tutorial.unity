@@ -438,6 +438,14 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2146831963, guid: 3fdd332814c5a69418a189c2e7a2c364, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 2146831963, guid: 3fdd332814c5a69418a189c2e7a2c364, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 2146831963, guid: 3fdd332814c5a69418a189c2e7a2c364, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 61
       objectReference: {fileID: 0}
@@ -2385,7 +2393,7 @@ Tilemap:
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6509434, g: 0.6478729, b: 0.6478729, a: 1}
   m_Origin: {x: -33, y: -21, z: 0}
   m_Size: {x: 66, y: 42, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
@@ -3055,6 +3063,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 301857726789970098, guid: 4bf2fe838b27a024e93307b451171ff4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 301857726789970100, guid: 4bf2fe838b27a024e93307b451171ff4, type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 301857726789970102, guid: 4bf2fe838b27a024e93307b451171ff4, type: 3}

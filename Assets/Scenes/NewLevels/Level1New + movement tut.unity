@@ -1065,6 +1065,17 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 3188379773132028548, guid: 3fdd332814c5a69418a189c2e7a2c364, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3fdd332814c5a69418a189c2e7a2c364, type: 3}
+--- !u!114 &1132915285 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1013152106, guid: 3fdd332814c5a69418a189c2e7a2c364, type: 3}
+  m_PrefabInstance: {fileID: 1132915284}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e08bf5c6382d8a48a0292ebb76b7268, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1132915286 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 998166237, guid: 3fdd332814c5a69418a189c2e7a2c364, type: 3}
@@ -1257,11 +1268,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 301857726789970098, guid: 4bf2fe838b27a024e93307b451171ff4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.51
+      value: -5.05
       objectReference: {fileID: 0}
     - target: {fileID: 301857726789970098, guid: 4bf2fe838b27a024e93307b451171ff4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.38
+      value: -3.57
       objectReference: {fileID: 0}
     - target: {fileID: 301857726789970098, guid: 4bf2fe838b27a024e93307b451171ff4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1302,7 +1313,7 @@ PrefabInstance:
     - target: {fileID: 619393608050173485, guid: 4bf2fe838b27a024e93307b451171ff4, type: 3}
       propertyPath: movementJoystick
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1132915285}
     - target: {fileID: 619393608050173485, guid: 4bf2fe838b27a024e93307b451171ff4, type: 3}
       propertyPath: resetAllPlayerPref
       value: 0
@@ -3075,7 +3086,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2692770d34b4ec46a3ab82dfccefadf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 10
   initialOffset: -20
 --- !u!4 &1988247590
 Transform:

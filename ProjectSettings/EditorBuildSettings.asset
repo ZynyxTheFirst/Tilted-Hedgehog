@@ -24,6 +24,12 @@ EditorBuildSettings:
     path: Assets/Scenes/NewLevels/Level5New - Door and key Tutorial.unity
     guid: 19bbd70a2c98d4341bef39f652faa7ac
   - enabled: 1
+    path: Assets/Scenes/NewLevels/Level6New.unity
+    guid: 9addfaa107fa21a41af067e2750d17ac
+  - enabled: 1
+    path: Assets/Scenes/NewLevels/Level7New.unity
+    guid: b0cdeae731b15184185e4ffd49ee788b
+  - enabled: 1
     path: Assets/Scenes/Menu/Level Select.unity
     guid: fc41288a46ba9b347a384d0f3abfeb37
   m_configObjects:

@@ -1785,6 +1785,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2611692462002367203, guid: c69e8162ec8766640a6efb108edac98f, type: 3}
   m_PrefabInstance: {fileID: 2611692460649653967}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1542514631 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5666492601113746593, guid: 5884245d16ae3454990b0ef446d2604c, type: 3}
+  m_PrefabInstance: {fileID: 5666492602539930494}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 042f75fdc3a3dbe4dba797242f2c07d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1600993174
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2166,7 +2177,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 135.00146, y: -64.00635}
-  m_SizeDelta: {x: 105, y: 95}
+  m_SizeDelta: {x: 128, y: 128}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1789066006
 MonoBehaviour:
@@ -2212,10 +2223,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1542514631}
         m_TargetAssemblyTypeName: LevelSelector, Assembly-CSharp
         m_MethodName: OpenScene
-        m_Mode: 5
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

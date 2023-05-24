@@ -1,42 +1,66 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class SceneTransition : MonoBehaviour
 {
-    public float transitionTime = 1.0f;
-    public Vector3 gameBoardOffset = new Vector3(10.0f, 0.0f, 0.0f);
+    public float speed = 5f; // Adjust this value to control the movement speed
+    public float initialOffset = -20;
 
-    private bool transitioning = false;
-    private Vector3 originalGameBoardPosition;
-    private Vector3 newGameBoardPosition;
-    private float transitionTimer = 0.0f;
+    private Vector3 center;
+    private Vector3 targetPosition;
+    private Vector3 offsetPosition;
 
-    void Start()
+    public static bool centerReached;
+    public static bool transitioning;
+
+    private void Awake()
     {
-        originalGameBoardPosition = transform.position;
-        newGameBoardPosition = originalGameBoardPosition + gameBoardOffset;
+        transitioning = false;
+        centerReached = false;
     }
 
-    void Update()
+    private void Start()
     {
-        if (transitioning)
-        {
-            transitionTimer += Time.deltaTime;
-            float t = Mathf.Clamp01(transitionTimer / transitionTime);
-            transform.position = Vector3.Lerp(originalGameBoardPosition, newGameBoardPosition, t);
+        // Calculate the target position at the center of the screen
+        float screenWidth = Screen.width;
+        float screenHeight = Screen.height;
+        center = Camera.main.ScreenToWorldPoint(new Vector3(screenWidth / 2f, screenHeight / 2f, 0f));
+        center.z = transform.position.z; // Maintain the object's original z position
 
-            if (t >= 1.0f)
-            {
-                transitioning = false;
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            }
+        offsetPosition = new Vector3(center.x + -initialOffset, center.y, center.z);
+
+        // Set the initial position of the object with an offset to the left
+        Vector3 initialPosition = new Vector3(center.x + initialOffset, center.y, center.z);
+        transform.position = initialPosition;
+        SlideIn();
+    }
+
+    private void Update()
+    {
+        // Move the object towards the target position
+        transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
+
+        // Check if the object has reached the target position
+        if (transform.position == center)
+        {
+            centerReached = true;
+        }
+        else centerReached = false;
+
+        if(transform.position == offsetPosition)
+        {
+            GoToNextLevel.LoadNextLevel();
         }
     }
 
-    public void StartTransition()
+    public void SlideOut()
     {
         transitioning = true;
+        centerReached = false;
+        targetPosition = offsetPosition;
+    }
+
+    private void SlideIn()
+    {
+        targetPosition = center;
     }
 }

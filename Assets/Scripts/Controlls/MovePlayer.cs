@@ -9,6 +9,7 @@ public class MovePlayer : MonoBehaviour
     public bool resetAllPlayerPref;
     private Rigidbody2D rb;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -41,4 +42,7 @@ public class MovePlayer : MonoBehaviour
         }
         
     }
+
+
+
 }

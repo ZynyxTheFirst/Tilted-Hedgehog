@@ -15,6 +15,7 @@ public class PickupStar : MonoBehaviour
     private bool isCollected = false;
     private bool animatorOff = true;
     private string saveKey;
+    [SerializeField] private AudioSource collectionSoundEffect;
 
     private void Start()
     {
@@ -44,6 +45,7 @@ public class PickupStar : MonoBehaviour
         
         if (Physics2D.OverlapCircle(this.transform.position, CollectRadius, PlayerMask) && isCollected == false)
         {
+            
             PlayerPrefs.SetInt("StarsCollected", starsCollected +1);
 
             isCollected = true;
@@ -68,6 +70,12 @@ public class PickupStar : MonoBehaviour
 
         // Draw a wire sphere with the same radius as the circle collider
         Gizmos.DrawWireSphere(transform.position, CollectRadius);
+    }
+
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        collectionSoundEffect.Play();
     }
 
 }

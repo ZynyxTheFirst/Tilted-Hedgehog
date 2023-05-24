@@ -12,13 +12,15 @@ public class EndGoal : MonoBehaviour
     private GameObject[] starsPickup;
     private Sprite starCollected;
     private int amountCollected;
-    private bool animatorOff = true;
+    //private bool animatorOff = true;
     
     private void Update() {
+        /*
         if(SceneTransition.centerReached && animatorOff){
             GetComponent<Animator>().enabled = true;
             animatorOff = false;
         }
+        */
     }
 
     void Start()
@@ -33,6 +35,7 @@ public class EndGoal : MonoBehaviour
 
     public void OpenScoreScreen()
     {
+        
         if(joystickArea != null) { 
             joystickArea.SetActive(false);
         }
@@ -40,6 +43,7 @@ public class EndGoal : MonoBehaviour
         // Fryser spelarkontrollerna och stoppar spelarens velocity.
         player.GetComponent<MovePlayer>().enabled = false;
         player.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+
         
         for (int i = 0; i < starsPickup.Length; i++){
             if(starsPickup[i].GetComponent<PickupStar>().IsCollected()){
@@ -47,7 +51,7 @@ public class EndGoal : MonoBehaviour
                 //starsUI[i].GetComponent<Image>().sprite = starCollected;
             }
         }
-
+        Debug.Log("Inside OpenScore");
         for (int i = 0; i < amountCollected; i++)
         {
             starsScoreScreen[i].GetComponent<Image>().sprite = starCollected;
@@ -55,6 +59,7 @@ public class EndGoal : MonoBehaviour
 
 
         scoreScreen.transform.LeanScale(Vector2.one, 0.5f);
+        Debug.Log("Open score screen now");
     }
 
     public void CloseScoreScreen()
@@ -66,7 +71,6 @@ public class EndGoal : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-
             OpenScoreScreen();
             starUI.SetActive(true);
             GetComponent<SpriteRenderer>().enabled = false;

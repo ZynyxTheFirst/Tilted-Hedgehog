@@ -710,7 +710,7 @@ PrefabInstance:
       objectReference: {fileID: 1571953776}
     - target: {fileID: 3188379773132028553, guid: 3fdd332814c5a69418a189c2e7a2c364, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: StartTransition
+      value: SlideOut
       objectReference: {fileID: 0}
     - target: {fileID: 3188379773132028553, guid: 3fdd332814c5a69418a189c2e7a2c364, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -2807,7 +2807,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 73ddb2958e9cd451c82f37c26efa5eb0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2828,8 +2828,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -10
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.12820399, g: 0.4056604, b: 0.1480223, a: 1}
+  m_Sprite: {fileID: 3286163911610860551, guid: f2fb4ca3cc23e7947b68307ec5b1334d, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2848,7 +2848,7 @@ Transform:
   m_GameObject: {fileID: 1500837840}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 13.27688, y: 8.415051, z: 8.197262}
+  m_LocalScale: {x: 2.7, y: 1.75, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1571953777}
@@ -2888,7 +2888,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2692770d34b4ec46a3ab82dfccefadf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 10
   initialOffset: -20
 --- !u!4 &1571953777
 Transform:
@@ -3032,42 +3032,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Character
       objectReference: {fileID: 0}
-    - target: {fileID: 301857726789970102, guid: 4bf2fe838b27a024e93307b451171ff4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 301857726789970103, guid: 4bf2fe838b27a024e93307b451171ff4, type: 3}
-      propertyPath: m_Constraints
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 301857726789970103, guid: 4bf2fe838b27a024e93307b451171ff4, type: 3}
-      propertyPath: m_GravityScale
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 619393608050173485, guid: 4bf2fe838b27a024e93307b451171ff4, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 619393608050173485, guid: 4bf2fe838b27a024e93307b451171ff4, type: 3}
-      propertyPath: playerSpeed
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 619393608050173485, guid: 4bf2fe838b27a024e93307b451171ff4, type: 3}
-      propertyPath: slipperyFactor
-      value: 0.4
-      objectReference: {fileID: 0}
     - target: {fileID: 619393608050173485, guid: 4bf2fe838b27a024e93307b451171ff4, type: 3}
       propertyPath: movementJoystick
       value: 
       objectReference: {fileID: 1125481801}
-    - target: {fileID: 2299955654558126887, guid: 4bf2fe838b27a024e93307b451171ff4, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4181971330116150116, guid: 4bf2fe838b27a024e93307b451171ff4, type: 3}
-      propertyPath: launchForce
-      value: 100
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4bf2fe838b27a024e93307b451171ff4, type: 3}
 --- !u!1 &1627742575

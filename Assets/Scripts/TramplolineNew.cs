@@ -20,11 +20,19 @@ public class TramplolineNew : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        // Hämtar animatorn hos trampolinen som spelaren krockar med.
-        trampolineAnimator = collision.GetComponent<Animator>();
-        //trampolineAnimator.SetBool("isTriggered", true);
-        trampolineAnimator.Play("anim_trampolineGreen");
-        audioSource.Play();
+        
+        
+        
+        if (collision.gameObject.CompareTag("GreenSurface") ||collision.gameObject.CompareTag("OrangeSurface") || collision.gameObject.CompareTag("RedSurface"))
+        {
+            // Hämtar animatorn hos trampolinen som spelaren krockar med.
+            trampolineAnimator = collision.GetComponent<Animator>();
+            //trampolineAnimator.SetBool("isTriggered", true);
+            trampolineAnimator.Play("anim_trampolineGreen");
+            audioSource.Play();
+
+        }
+        
 
         var opposite = -rb.velocity;
         if (collision.gameObject.CompareTag("GreenSurface"))

@@ -721,7 +721,7 @@ PrefabInstance:
       objectReference: {fileID: 1571953776}
     - target: {fileID: 3188379773132028553, guid: 3fdd332814c5a69418a189c2e7a2c364, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: StartTransition
+      value: SlideOut
       objectReference: {fileID: 0}
     - target: {fileID: 3188379773132028553, guid: 3fdd332814c5a69418a189c2e7a2c364, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -1084,6 +1084,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1571953777}
     m_Modifications:
+    - target: {fileID: 5887273360097922383, guid: 73d260febcb5b3a43b8692cd01f3b934, type: 3}
+      propertyPath: starUI
+      value: 
+      objectReference: {fileID: 288528464}
+    - target: {fileID: 5887273360097922383, guid: 73d260febcb5b3a43b8692cd01f3b934, type: 3}
+      propertyPath: scoreScreen
+      value: 
+      objectReference: {fileID: 1205431689}
+    - target: {fileID: 5887273360097922383, guid: 73d260febcb5b3a43b8692cd01f3b934, type: 3}
+      propertyPath: starsScoreScreen.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5887273360097922383, guid: 73d260febcb5b3a43b8692cd01f3b934, type: 3}
+      propertyPath: starsScoreScreen.Array.data[0]
+      value: 
+      objectReference: {fileID: 459533169}
+    - target: {fileID: 5887273360097922383, guid: 73d260febcb5b3a43b8692cd01f3b934, type: 3}
+      propertyPath: starsScoreScreen.Array.data[1]
+      value: 
+      objectReference: {fileID: 391801142}
+    - target: {fileID: 5887273360097922383, guid: 73d260febcb5b3a43b8692cd01f3b934, type: 3}
+      propertyPath: starsScoreScreen.Array.data[2]
+      value: 
+      objectReference: {fileID: 595625659}
     - target: {fileID: 7552683143559868133, guid: 73d260febcb5b3a43b8692cd01f3b934, type: 3}
       propertyPath: starUI
       value: 
@@ -2886,7 +2910,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 73ddb2958e9cd451c82f37c26efa5eb0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2907,8 +2931,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -10
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.12820399, g: 0.4056604, b: 0.1480223, a: 1}
+  m_Sprite: {fileID: 3286163911610860551, guid: f2fb4ca3cc23e7947b68307ec5b1334d, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2927,7 +2951,7 @@ Transform:
   m_GameObject: {fileID: 1500837840}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 13.276878, y: 8.4150505, z: 8.197262}
+  m_LocalScale: {x: 2.7, y: 1.75, z: 8.197262}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1571953777}
@@ -2962,7 +2986,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2692770d34b4ec46a3ab82dfccefadf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 10
   initialOffset: -20
 --- !u!4 &1571953777
 Transform:

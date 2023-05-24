@@ -1,5 +1,6 @@
 using UnityEngine.SceneManagement;
 
+
 public static class GoToNextLevel
 {
     // Add scenes in inspector

@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb93696f0cfa83949963024dc3e908b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 301857726789970102, guid: 4bf2fe838b27a024e93307b451171ff4, type: 3}
   respawnPoint: {fileID: 0}
   time: 1
   moveSpeed: 2

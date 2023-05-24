@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PickupStar : MonoBehaviour
 {
@@ -8,14 +9,19 @@ public class PickupStar : MonoBehaviour
 
     public LayerMask PlayerMask;
     public float CollectRadius = 0.5f;
+    private ParticleSystem particleSys;
+    private SpriteRenderer spriteRenderer;
     private int starsCollected;
     private bool isCollected = false;
+    private bool animatorOff = true;
     private string saveKey;
 
     private void Start()
     {
+        particleSys = GetComponent<ParticleSystem>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
         // Skapar ett unikt saveKey för varje stjärnobjekt.
-        saveKey = "Star_" + gameObject.name;
+        saveKey = transform.parent.name + SceneManager.GetActiveScene().name;
 
         if (PlayerPrefs.HasKey(saveKey))
         {
@@ -31,7 +37,12 @@ public class PickupStar : MonoBehaviour
 
     private void Update()
     {
-        if (Physics2D.OverlapCircle(this.transform.position, CollectRadius, PlayerMask))
+        if(SceneTransition.centerReached && animatorOff){
+            GetComponent<Animator>().enabled = true;
+            animatorOff = false;
+        }
+        
+        if (Physics2D.OverlapCircle(this.transform.position, CollectRadius, PlayerMask) && isCollected == false)
         {
             PlayerPrefs.SetInt("StarsCollected", starsCollected +1);
 
@@ -40,7 +51,9 @@ public class PickupStar : MonoBehaviour
             // Spara om stjärnarn har blivit upplockad eller inte.
             PlayerPrefs.SetInt(saveKey, 1);
             PlayerPrefs.Save();
-            gameObject.SetActive(false);
+            particleSys.Play();
+            spriteRenderer.enabled = false;
+            //gameObject.SetActive(false);
             //Destroy(this.gameObject);
         }
         

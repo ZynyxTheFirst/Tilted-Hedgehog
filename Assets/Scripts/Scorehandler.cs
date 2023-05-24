@@ -13,7 +13,11 @@ public class Scorehandler : MonoBehaviour
     }
     private void Update()
     {
-        scoreText.text = "" + starScore;
+        if(scoreText != null)
+        {
+            scoreText.text = "" + starScore;
+        }
+        
     }
 
     public void FoundStar()

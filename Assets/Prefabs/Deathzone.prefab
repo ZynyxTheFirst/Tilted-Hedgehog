@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8465603088524723684}
   - component: {fileID: 8465603088524723685}
   - component: {fileID: 8465603088524723682}
-  - component: {fileID: 6927245252038324139}
+  - component: {fileID: 5921246986795450408}
   m_Layer: 0
   m_Name: Deathzone
   m_TagString: Untagged
@@ -104,7 +104,6 @@ MonoBehaviour:
   time: 1
   moveSpeed: 2
   minSpeed: 2
-  deathSoundEffect: {fileID: 6927245252038324139}
 --- !u!58 &8465603088524723682
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -121,7 +120,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.0997905
---- !u!82 &6927245252038324139
+--- !u!82 &5921246986795450408
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -131,7 +130,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 9f5be3eee561bb240823b19eb0dd15db, type: 3}
+  m_audioClip: {fileID: 8300000, guid: d1713edb63e730348a94a54c31643b50, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

@@ -2274,18 +2274,6 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 689707190}
-    - target: {fileID: 4725616035581342919, guid: ceac7946906bedf4dae22b7b8e664c56, type: 3}
-      propertyPath: angleLeft
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4725616035581342919, guid: ceac7946906bedf4dae22b7b8e664c56, type: 3}
-      propertyPath: pushForce
-      value: 60
-      objectReference: {fileID: 0}
-    - target: {fileID: 4725616035581342919, guid: ceac7946906bedf4dae22b7b8e664c56, type: 3}
-      propertyPath: angleUpwards
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6271981033413854512, guid: ceac7946906bedf4dae22b7b8e664c56, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2321,14 +2309,6 @@ PrefabInstance:
     - target: {fileID: 6271981033413854512, guid: ceac7946906bedf4dae22b7b8e664c56, type: 3}
       propertyPath: m_SizeDelta.y
       value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 6271981033413854512, guid: ceac7946906bedf4dae22b7b8e664c56, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.16338499
-      objectReference: {fileID: 0}
-    - target: {fileID: 6271981033413854512, guid: ceac7946906bedf4dae22b7b8e664c56, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.1420572
       objectReference: {fileID: 0}
     - target: {fileID: 6271981033413854512, guid: ceac7946906bedf4dae22b7b8e664c56, type: 3}
       propertyPath: m_LocalPosition.x

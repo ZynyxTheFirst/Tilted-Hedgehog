@@ -2212,8 +2212,8 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
+    m_HighlightedSprite: {fileID: 3286163911610860551, guid: 9b8b9478eeb07e742b913121e65c4eb9, type: 3}
+    m_PressedSprite: {fileID: 3286163911610860551, guid: 2de981f8a13297d479d28f8687cae5d6, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -2259,7 +2259,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 3286163911610860551, guid: 902b965baddbdb34883ab7e2d6c4dc57, type: 3}
+  m_Sprite: {fileID: 3286163911610860551, guid: 444e5d55da1119246959cb722a81db0f, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -2370,7 +2370,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2611692462002367203, guid: c69e8162ec8766640a6efb108edac98f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 204.68263
+      value: 204.68262
       objectReference: {fileID: 0}
     - target: {fileID: 2611692462002367203, guid: c69e8162ec8766640a6efb108edac98f, type: 3}
       propertyPath: m_AnchoredPosition.y

@@ -224,6 +224,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2146831965, guid: 3fdd332814c5a69418a189c2e7a2c364, type: 3}
+      propertyPath: m_SpriteState.m_PressedSprite
+      value: 
+      objectReference: {fileID: 3286163911610860551, guid: 68f988d2d5a636442bfdfbdf0b2119f0, type: 3}
+    - target: {fileID: 2146831965, guid: 3fdd332814c5a69418a189c2e7a2c364, type: 3}
+      propertyPath: m_SpriteState.m_SelectedSprite
+      value: 
+      objectReference: {fileID: 3286163911610860551, guid: ea7d833c4d53a074bbc13d62cda3a1cd, type: 3}
+    - target: {fileID: 2146831965, guid: 3fdd332814c5a69418a189c2e7a2c364, type: 3}
+      propertyPath: m_SpriteState.m_HighlightedSprite
+      value: 
+      objectReference: {fileID: 3286163911610860551, guid: f4132b30f314d704081a9b0531ebe972, type: 3}
+    - target: {fileID: 2146831966, guid: 3fdd332814c5a69418a189c2e7a2c364, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 3286163911610860551, guid: ea7d833c4d53a074bbc13d62cda3a1cd, type: 3}
     - target: {fileID: 1212689572854047325, guid: 3fdd332814c5a69418a189c2e7a2c364, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0

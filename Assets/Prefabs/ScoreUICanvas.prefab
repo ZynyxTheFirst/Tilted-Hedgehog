@@ -940,6 +940,7 @@ GameObject:
   - component: {fileID: 3188379772704050297}
   - component: {fileID: 3188379772704050296}
   - component: {fileID: 3188379772704050299}
+  - component: {fileID: 1449052049}
   m_Layer: 5
   m_Name: ScoreUICanvas
   m_TagString: Untagged
@@ -1035,6 +1036,18 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &1449052049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3188379772704050298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea6119648f8fc4c4389a41f22cf6e13d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3188379772951897616
 GameObject:
   m_ObjectHideFlags: 0
@@ -1800,11 +1813,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1915344983142760777, guid: b51fcec65c80e1245b79af8e09804585, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 64
+      value: 128
       objectReference: {fileID: 0}
     - target: {fileID: 1915344983142760777, guid: b51fcec65c80e1245b79af8e09804585, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 64
+      value: 128
       objectReference: {fileID: 0}
     - target: {fileID: 1915344983142760777, guid: b51fcec65c80e1245b79af8e09804585, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1836,11 +1849,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1915344983142760777, guid: b51fcec65c80e1245b79af8e09804585, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 66
+      value: 61
       objectReference: {fileID: 0}
     - target: {fileID: 1915344983142760777, guid: b51fcec65c80e1245b79af8e09804585, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -35
+      value: -37
       objectReference: {fileID: 0}
     - target: {fileID: 1915344983142760777, guid: b51fcec65c80e1245b79af8e09804585, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1858,6 +1871,10 @@ PrefabInstance:
       propertyPath: m_PreserveAspect
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1915344983142760782, guid: b51fcec65c80e1245b79af8e09804585, type: 3}
+      propertyPath: joyStick
+      value: 
+      objectReference: {fileID: 1013152103}
     - target: {fileID: 1915344983142760782, guid: b51fcec65c80e1245b79af8e09804585, type: 3}
       propertyPath: pauseScreen
       value: 
@@ -2106,7 +2123,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 103594714007620178, guid: 7742989dd4614bb4da4e86332afbd854, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: StartTransition
+      value: SlideOut
       objectReference: {fileID: 0}
     - target: {fileID: 103594714007620178, guid: 7742989dd4614bb4da4e86332afbd854, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName

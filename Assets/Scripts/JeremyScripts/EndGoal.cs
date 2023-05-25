@@ -47,14 +47,11 @@ public class EndGoal : MonoBehaviour
         
         for (int i = 0; i < starsPickup.Length; i++){
             if(starsPickup[i].GetComponent<PickupStar>().IsCollected()){
-                Debug.Log("Ökar amountcollected");
                 amountCollected++;
-                //starsUI[i].GetComponent<Image>().sprite = starCollected;
             }
         }
         for (int i = 0; i < amountCollected; i++)
         {
-            Debug.Log("Ändrar stärnbilden till collected");
             starsScoreScreen[i].GetComponent<Image>().sprite = starCollected;
         }
 

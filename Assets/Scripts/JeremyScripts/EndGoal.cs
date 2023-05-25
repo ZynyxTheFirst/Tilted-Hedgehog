@@ -4,6 +4,8 @@ using UnityEngine.UI;
 public class EndGoal : MonoBehaviour
 {
     [SerializeField] GameObject scoreScreen;
+
+    [SerializeField] GameObject joyStick;
     public GameObject starUI;
     public GameObject[] starsScoreScreen;
 
@@ -73,6 +75,7 @@ public class EndGoal : MonoBehaviour
         {
             OpenScoreScreen();
             starUI.SetActive(true);
+            joyStick.SetActive(false);
             GetComponent<SpriteRenderer>().enabled = false;
             Pause.PauseGame();
             //PlayerPrefs.SetInt("LevelsUnlocked", levelToUnlock);

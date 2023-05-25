@@ -5,6 +5,8 @@ using UnityEngine;
 public class AlteredWindScript : MonoBehaviour
 {
     public ParticleSystem particles;
+
+    [SerializeField] private AudioSource audioSource;
     public Rigidbody2D rb;
     public GameObject player;
     public bool angleDownwards, angleUpwards, angleLeft, angleRight = false;
@@ -47,6 +49,7 @@ public class AlteredWindScript : MonoBehaviour
     private void PumpAir()
     {
         rb.AddForce(direction * pushForce);
+        audioSource.Play();
         particles.Play();
         Invoke("RestoreStatesOfPlayerAndBag", 0.40f);
     }

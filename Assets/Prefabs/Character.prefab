@@ -177,9 +177,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementJoystick: {fileID: 0}
-  playerSpeed: 20
+  playerSpeed: 30
   slipperyFactor: 0.1
-  resetAllPlayerPref: 0
 --- !u!114 &2299955654558126887
 MonoBehaviour:
   m_ObjectHideFlags: 0

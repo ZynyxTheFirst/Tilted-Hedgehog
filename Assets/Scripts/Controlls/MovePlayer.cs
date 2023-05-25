@@ -6,17 +6,12 @@ public class MovePlayer : MonoBehaviour
     public MovementJoystick movementJoystick;
     public float playerSpeed;
     public float slipperyFactor; // controls the slippery movement
-    public bool resetAllPlayerPref;
     private Rigidbody2D rb;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        if (resetAllPlayerPref)
-        {
-            PlayerPrefs.DeleteAll();
-        }
 
         rb = GetComponent<Rigidbody2D>();
         if (rb == null)

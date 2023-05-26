@@ -1306,7 +1306,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 300.00003}
+  m_AnchoredPosition: {x: 0, y: 283}
   m_SizeDelta: {x: 0, y: -599.99994}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9042944063154966771
@@ -1831,6 +1831,10 @@ PrefabInstance:
       propertyPath: m_PreserveAspect
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1915344983142760782, guid: b51fcec65c80e1245b79af8e09804585, type: 3}
+      propertyPath: joyStick
+      value: 
+      objectReference: {fileID: 1013152103}
     - target: {fileID: 1915344983142760782, guid: b51fcec65c80e1245b79af8e09804585, type: 3}
       propertyPath: pauseScreen
       value: 

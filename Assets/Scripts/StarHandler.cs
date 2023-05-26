@@ -20,7 +20,7 @@ public class StarHandler : MonoBehaviour
         for (int i = 0; i <= PlayerPrefs.GetInt(currentLevelStars); i++)
         {
             if(starsPickup[i].GetComponent<PickupStar>().IsCollected()){
-                starsPickup[i].SetActive(false);
+                //starsPickup[i].SetActive(false);
             }
             
         }

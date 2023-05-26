@@ -9,7 +9,7 @@ public class Scorehandler : MonoBehaviour
     public TMP_Text scoreText;
     private void Start()
     {
-        starScore = PlayerPrefs.GetInt("StarScore");
+        starScore = PlayerPrefs.GetInt("TotalStarsCollected");
     }
     private void Update()
     {
@@ -19,10 +19,11 @@ public class Scorehandler : MonoBehaviour
         }
         
     }
-
+    /*
     public void FoundStar()
     {
         starScore = starScore + 1;
         PlayerPrefs.SetInt("StarScore", starScore);
     }
+    */
 }

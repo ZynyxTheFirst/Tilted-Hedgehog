@@ -6,6 +6,7 @@ public class PauseButton : MonoBehaviour
     [SerializeField] Image pauseScreen;
 
     [SerializeField] GameObject joyStick;
+    [SerializeField] GameObject starUI;
     private bool menuOpen = false;
     void Start()
     {
@@ -21,12 +22,14 @@ public class PauseButton : MonoBehaviour
         {
             menuOpen=true;
             joyStick.SetActive(false);
+            starUI.SetActive(true);
             OpenPauseScreen();
         }
         else
         {
             menuOpen=false;
             joyStick.SetActive(true);
+            starUI.SetActive(false);
             ClosePauseScreen();
         }
     }

@@ -1832,6 +1832,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1915344983142760782, guid: b51fcec65c80e1245b79af8e09804585, type: 3}
+      propertyPath: joyStick
+      value: 
+      objectReference: {fileID: 1013152103}
+    - target: {fileID: 1915344983142760782, guid: b51fcec65c80e1245b79af8e09804585, type: 3}
       propertyPath: pauseScreen
       value: 
       objectReference: {fileID: 1336413578}

@@ -6,18 +6,19 @@ public class MovePlayer : MonoBehaviour
     public MovementJoystick movementJoystick;
     public float playerSpeed;
     public float slipperyFactor; // controls the slippery movement
-    public bool resetAllPlayerPref;
     private Rigidbody2D rb;
     public AudioSource audioSource;
+    private Animator animator;
+    public float rotationSpeed = 5f;
+    public float spinningSpeed = 1f;
+    public Vector2 minimumSpeed = new Vector2(0.1f, 0.1f);
 
 
     // Start is called before the first frame update
     void Start()
     {
-        if (resetAllPlayerPref)
-        {
-            PlayerPrefs.DeleteAll();
-        }
+        //animator.SetBool("isMoving", false);
+        animator = GetComponent<Animator>();
 
         rb = GetComponent<Rigidbody2D>();
         if (rb == null)
@@ -35,11 +36,33 @@ public class MovePlayer : MonoBehaviour
             {
                 Vector2 targetVelocity = new Vector2(movementJoystick.joystickVec.x * playerSpeed, movementJoystick.joystickVec.y * playerSpeed);
                 rb.velocity = Vector2.Lerp(rb.velocity, targetVelocity, Time.deltaTime * slipperyFactor);
+                
+                
             }
             else
             {
                 rb.velocity = Vector2.Lerp(rb.velocity, Vector2.zero, Time.deltaTime * slipperyFactor);
             }
+
+            if (rb.velocity.x > minimumSpeed.x || rb.velocity.y > minimumSpeed.y || rb.velocity.x < -minimumSpeed.x || rb.velocity.y < -minimumSpeed.y)
+            {
+                animator.SetBool("isMoving", true);
+            }
+            else
+            {
+                animator.SetBool("isMoving", false);
+            }
+
+            // Om velocity inte är 0 så roterar karaktären.
+            if (rb.velocity != Vector2.zero)
+            {
+
+                float angle = Mathf.Atan2(rb.velocity.y, rb.velocity.x) * Mathf.Rad2Deg;
+                Quaternion targetRotation = Quaternion.AngleAxis(angle + 90, Vector3.forward);
+                transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+            }
+
+            animator.speed = rb.velocity.magnitude * spinningSpeed;
         }
         
     }

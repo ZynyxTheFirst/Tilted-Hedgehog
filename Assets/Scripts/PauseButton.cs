@@ -4,6 +4,8 @@ using UnityEngine.UI;
 public class PauseButton : MonoBehaviour
 {
     [SerializeField] Image pauseScreen;
+
+    [SerializeField] GameObject joyStick;
     private bool menuOpen = false;
     void Start()
     {
@@ -18,11 +20,13 @@ public class PauseButton : MonoBehaviour
         if (!menuOpen)
         {
             menuOpen=true;
+            joyStick.SetActive(false);
             OpenPauseScreen();
         }
         else
         {
             menuOpen=false;
+            joyStick.SetActive(true);
             ClosePauseScreen();
         }
     }

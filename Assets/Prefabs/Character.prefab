@@ -82,7 +82,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 74e344873dc2b9640a4151ec82313cbc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2077c287e54d59646a7f49acbdd0405f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -113,7 +113,7 @@ Rigidbody2D:
   m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!58 &301857726789970100
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -127,9 +127,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.02}
+  m_Offset: {x: 0, y: -0.0064628124}
   serializedVersion: 2
-  m_Radius: 0.4
+  m_Radius: 0.39187813
 --- !u!95 &1265076778
 Animator:
   serializedVersion: 5
@@ -164,10 +164,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementJoystick: {fileID: 0}
-  playerSpeed: 5
+  playerSpeed: 8
   slipperyFactor: 0.4
-  resetAllPlayerPref: 1
   audioSource: {fileID: 2953466745090655116}
+  rotationSpeed: 10
+  spinningSpeed: 0.7
+  minimumSpeed: {x: 0.1, y: 0.1}
 --- !u!114 &4181971330116150116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,7 +197,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 7e397942d785e54458cc73a87c99d77d, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0

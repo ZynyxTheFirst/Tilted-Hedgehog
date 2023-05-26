@@ -104,6 +104,7 @@ MonoBehaviour:
   time: 1
   moveSpeed: 2
   minSpeed: 2
+  fallingAudioSource: {fileID: 5921246986795450408}
 --- !u!58 &8465603088524723682
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -130,7 +131,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d1713edb63e730348a94a54c31643b50, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 9f5be3eee561bb240823b19eb0dd15db, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

@@ -12,7 +12,7 @@ public class KillPlayer : MonoBehaviour
     public float minSpeed = 2f;
     private Transform deathzoneTransform;
     private Animator playerAnimator;
-    private AudioSource audioSource;
+    [SerializeField] AudioSource fallingAudioSource;
 
     //Sends you to checkpoint 
 
@@ -25,7 +25,6 @@ public class KillPlayer : MonoBehaviour
     //}
     private void Start()
     {
-        audioSource = GetComponent<AudioSource>();
         deathzoneTransform = GetComponent<Transform>();
         playerAnimator = player.GetComponent<Animator>();
     }
@@ -56,7 +55,7 @@ public class KillPlayer : MonoBehaviour
     {
         GameManager.GameOver();
     }
-
+    /*
     private IEnumerator MovePlayerToDeathZone2()
     {
         Vector2 startPosition = player.transform.position;
@@ -69,7 +68,6 @@ public class KillPlayer : MonoBehaviour
             player.transform.position = Vector2.MoveTowards(player.transform.position, targetPosition, speed * Time.deltaTime);
             if (Vector2.Distance(player.transform.position, targetPosition) > 0.5f)
             {
-                audioSource.Play();
                 playerAnimator.SetBool("isDead", true);
             }
             yield return null;
@@ -79,6 +77,7 @@ public class KillPlayer : MonoBehaviour
         player.transform.position = targetPosition;
         
     }
+    */
 
     private IEnumerator MovePlayerToDeathZone()
     {
@@ -88,19 +87,19 @@ public class KillPlayer : MonoBehaviour
 
         // Calculate move speed based on player's speed when it touches the death zone
         float moveSpeed = player.GetComponent<Rigidbody2D>().velocity.magnitude;
-        Debug.Log(moveSpeed);
         
         if(moveSpeed < minSpeed)
         {
             moveSpeed = minSpeed;
         }
-        Debug.Log(moveSpeed);
 
         while (Vector2.Distance(player.transform.position, targetPosition) > 0.01f)
         {
             player.transform.position = Vector2.MoveTowards(player.transform.position, targetPosition, moveSpeed * Time.deltaTime);
             if (Vector2.Distance(player.transform.position, targetPosition) > 0.5f)
             {
+                Debug.Log("Spelarn dör, spela ljud");
+                fallingAudioSource.Play();
                 playerAnimator.SetBool("isDead", true);
             }
             yield return null;

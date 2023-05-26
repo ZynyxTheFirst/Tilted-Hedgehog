@@ -48,10 +48,8 @@ public class EndGoal : MonoBehaviour
         for (int i = 0; i < starsPickup.Length; i++){
             if(starsPickup[i].GetComponent<PickupStar>().IsCollected()){
                 amountCollected++;
-                //starsUI[i].GetComponent<Image>().sprite = starCollected;
             }
         }
-        Debug.Log("Inside OpenScore");
         for (int i = 0; i < amountCollected; i++)
         {
             starsScoreScreen[i].GetComponent<Image>().sprite = starCollected;
@@ -59,7 +57,6 @@ public class EndGoal : MonoBehaviour
 
 
         scoreScreen.transform.LeanScale(Vector2.one, 0.5f);
-        Debug.Log("Open score screen now");
     }
 
     public void CloseScoreScreen()
@@ -74,7 +71,9 @@ public class EndGoal : MonoBehaviour
             OpenScoreScreen();
             starUI.SetActive(true);
             GetComponent<SpriteRenderer>().enabled = false;
+            
             Pause.PauseGame();
+            gameObject.SetActive(false);
             //PlayerPrefs.SetInt("LevelsUnlocked", levelToUnlock);
         }
     }

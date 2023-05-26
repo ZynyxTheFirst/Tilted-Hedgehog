@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] Image GOScreen;
     [SerializeField] GameObject canvas;
+    private GameObject pauseButton;
     public static bool isGameOver = false;
 
     private void Awake()
@@ -17,6 +18,8 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        
+        pauseButton = GameObject.Find("PauseButton"); // Byt inte namn på PauseButton under ScoreUICanvas för då funkar inte detta.
         if(GOScreen != null)
         {
             GOScreen.transform.localScale = Vector2.zero;
@@ -28,6 +31,7 @@ public class GameManager : MonoBehaviour
     {
         if (isGameOver)
         {
+            pauseButton.SetActive(false);
             OpenGOScreen();
             Pause.PauseGame();
             isGameOver = false;

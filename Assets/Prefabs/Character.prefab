@@ -164,10 +164,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementJoystick: {fileID: 0}
-  playerSpeed: 5
+  playerSpeed: 8
   slipperyFactor: 0.4
-  resetAllPlayerPref: 1
   audioSource: {fileID: 2953466745090655116}
+  rotationSpeed: 10
+  spinningSpeed: 0.7
+  minimumSpeed: {x: 0.1, y: 0.1}
 --- !u!114 &4181971330116150116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,7 +197,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 7e397942d785e54458cc73a87c99d77d, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0

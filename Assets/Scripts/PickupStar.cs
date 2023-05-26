@@ -54,6 +54,7 @@ public class PickupStar : MonoBehaviour
             PlayerPrefs.SetInt(saveKey, 1);
             PlayerPrefs.Save();
             particleSys.Play();
+            collectionSoundEffect.Play();
             spriteRenderer.enabled = false;
             //gameObject.SetActive(false);
             //Destroy(this.gameObject);
@@ -70,12 +71,6 @@ public class PickupStar : MonoBehaviour
 
         // Draw a wire sphere with the same radius as the circle collider
         Gizmos.DrawWireSphere(transform.position, CollectRadius);
-    }
-
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        collectionSoundEffect.Play();
     }
 
 }

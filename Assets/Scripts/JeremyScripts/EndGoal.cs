@@ -11,7 +11,7 @@ public class EndGoal : MonoBehaviour
     public GameObject starUI;
     public GameObject[] starsScoreScreen;
     public AudioSource audioSource;
-    public string levelIdentifier;
+    private string levelIdentifier;
 
     private GameObject joystickArea;
     private VictoryScreen victoryScreen;

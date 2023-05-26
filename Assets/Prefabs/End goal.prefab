@@ -150,7 +150,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreScreen: {fileID: 0}
   joyStick: {fileID: 0}
-  SCR: {fileID: 3739785129656068219}
   starUI: {fileID: 0}
   starsScoreScreen:
   - {fileID: 0}
@@ -228,7 +227,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 7bd7c0a36119ecf49abf3908c4ca56e9, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0

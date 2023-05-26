@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -24,7 +25,7 @@ public class LevelUnlocked : MonoBehaviour
         // Get the number of levels currently unlocked from PlayerPrefs
         int levelsUnlocked = PlayerPrefs.GetInt("LevelsUnlocked");
 
-        Debug.Log(levelsUnlocked);
+        //Debug.Log(levelsUnlocked);
 
         // Loop through each level button and check if it should be unlocked
         for (int i = 0; i < levelButtons.Length; i++)
@@ -32,11 +33,14 @@ public class LevelUnlocked : MonoBehaviour
             if (i < levelsUnlocked)
             {
                 // Level is unlocked, enable button
+                levelButtons[i].GetComponentInChildren<TextMeshProUGUI>().enabled = true;
                 levelButtons[i].interactable = true;
+                
             }
             else
             {
                 // Level is locked, disable button
+                levelButtons[i].GetComponentInChildren<TextMeshProUGUI>().enabled = false;
                 levelButtons[i].interactable = false;
             }
         }

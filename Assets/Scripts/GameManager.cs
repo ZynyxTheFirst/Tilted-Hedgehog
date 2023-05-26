@@ -17,7 +17,11 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        GOScreen.transform.localScale = Vector2.zero;
+        if(GOScreen != null)
+        {
+            GOScreen.transform.localScale = Vector2.zero;
+        }
+        
     }
 
     private void Update()

@@ -3169,38 +3169,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Character
       objectReference: {fileID: 0}
-    - target: {fileID: 301857726789970102, guid: 4bf2fe838b27a024e93307b451171ff4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 301857726789970103, guid: 4bf2fe838b27a024e93307b451171ff4, type: 3}
-      propertyPath: m_Constraints
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 301857726789970103, guid: 4bf2fe838b27a024e93307b451171ff4, type: 3}
-      propertyPath: m_GravityScale
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 619393608050173485, guid: 4bf2fe838b27a024e93307b451171ff4, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 619393608050173485, guid: 4bf2fe838b27a024e93307b451171ff4, type: 3}
-      propertyPath: playerSpeed
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 619393608050173485, guid: 4bf2fe838b27a024e93307b451171ff4, type: 3}
-      propertyPath: slipperyFactor
-      value: 0.4
-      objectReference: {fileID: 0}
     - target: {fileID: 619393608050173485, guid: 4bf2fe838b27a024e93307b451171ff4, type: 3}
       propertyPath: movementJoystick
       value: 
       objectReference: {fileID: 663148330}
-    - target: {fileID: 2299955654558126887, guid: 4bf2fe838b27a024e93307b451171ff4, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4bf2fe838b27a024e93307b451171ff4, type: 3}
 --- !u!1 &1620597793 stripped

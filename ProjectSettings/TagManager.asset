@@ -9,6 +9,7 @@ TagManager:
   - RedSurface
   - Wind
   - CollisionTag
+  - Wall
   layers:
   - Default
   - TransparentFX

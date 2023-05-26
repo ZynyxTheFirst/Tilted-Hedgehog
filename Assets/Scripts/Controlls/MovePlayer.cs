@@ -8,6 +8,7 @@ public class MovePlayer : MonoBehaviour
     public float slipperyFactor; // controls the slippery movement
     public bool resetAllPlayerPref;
     private Rigidbody2D rb;
+    public AudioSource audioSource;
 
 
     // Start is called before the first frame update
@@ -43,6 +44,12 @@ public class MovePlayer : MonoBehaviour
         
     }
 
-
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Wall"))
+            if (collision.relativeVelocity.magnitude > 0)
+                audioSource.Play();
+        Debug.Log(collision.collider.name);
+    }
 
 }

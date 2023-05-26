@@ -352,14 +352,14 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 862232461}
-  m_LocalRotation: {x: 0, y: 0, z: -0.07828503, w: 0.996931}
+  m_LocalRotation: {x: 0, y: 0, z: -0.052335896, w: 0.9986295}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1258714475}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -8.98}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -6}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 26.9, y: -60}
@@ -385,7 +385,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: TILTED
+  m_text: TILTED HEDGEHOG
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c43b7888327889d4eb195372ad0ae701, type: 2}
   m_sharedMaterial: {fileID: -492895735074882214, guid: c43b7888327889d4eb195372ad0ae701, type: 2}
@@ -412,7 +412,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 150
+  m_fontSize: 117.3
   m_fontSizeBase: 90
   m_fontWeight: 400
   m_enableAutoSizing: 1

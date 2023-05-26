@@ -14,7 +14,7 @@ public class EndGoal : MonoBehaviour
     private Animator playerAnimator;
     private GameObject[] starsPickup;
     private Sprite starCollected;
-    private AudioSource audioSource;
+    public AudioSource audioSource;
     private int amountCollected;
     private bool animatorOff = true;
     
@@ -29,8 +29,6 @@ public class EndGoal : MonoBehaviour
 
     void Start()
     {
-        
-        audioSource = GetComponent<AudioSource>();
         player = GameObject.Find("Character");
         joystickArea = GameObject.Find("JoystickArea");
         starCollected = scoreScreen.GetComponent<StarHandler>().starCollected;
@@ -75,6 +73,7 @@ public class EndGoal : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            
             audioSource.Play();
             OpenScoreScreen();
             starUI.SetActive(true);

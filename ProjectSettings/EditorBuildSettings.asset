@@ -9,8 +9,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu/Main Menu.unity
     guid: e44a9cd3cb40cd043961004d600902e3
   - enabled: 1
-    path: Assets/Scenes/NewLevels/Level1New + movement tut.unity
-    guid: 2b3252841ea2db949b26e0fc11e58ef8
+    path: Assets/Scenes/NewLevels/Level1New__movement_tut.unity
+    guid: 6f5e1e511aac89d4ebc48cf2a18445ae
   - enabled: 1
     path: Assets/Scenes/NewLevels/Level2New - Deathzone Tutorial.unity
     guid: fc1ce96b18a1e4a4f9ad7d106a6b3444

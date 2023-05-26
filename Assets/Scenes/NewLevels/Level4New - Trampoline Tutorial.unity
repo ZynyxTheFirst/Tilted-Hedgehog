@@ -281,7 +281,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1013152106, guid: 3fdd332814c5a69418a189c2e7a2c364, type: 3}
   m_PrefabInstance: {fileID: 264190638}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 354691499}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6e08bf5c6382d8a48a0292ebb76b7268, type: 3}
@@ -860,6 +860,11 @@ Transform:
   m_Father: {fileID: 1571953777}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &354691499 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1013152103, guid: 3fdd332814c5a69418a189c2e7a2c364, type: 3}
+  m_PrefabInstance: {fileID: 264190638}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &377996344
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1003,6 +1008,10 @@ PrefabInstance:
       propertyPath: starUI
       value: 
       objectReference: {fileID: 264190642}
+    - target: {fileID: 5887273360097922383, guid: 73d260febcb5b3a43b8692cd01f3b934, type: 3}
+      propertyPath: joyStick
+      value: 
+      objectReference: {fileID: 354691499}
     - target: {fileID: 5887273360097922383, guid: 73d260febcb5b3a43b8692cd01f3b934, type: 3}
       propertyPath: scoreScreen
       value: 

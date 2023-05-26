@@ -899,6 +899,10 @@ PrefabInstance:
       propertyPath: SCR
       value: 
       objectReference: {fileID: 1373350707}
+    - target: {fileID: 8709306358157090512, guid: 8ece35597a993324eba6a6a55f3a3613, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ece35597a993324eba6a6a55f3a3613, type: 3}
 --- !u!1001 &627518938
@@ -3029,10 +3033,10 @@ AudioSource:
   m_GameObject: {fileID: 1571953775}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 76ba094eb2f57494e99961918e537788, type: 2}
+  OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f733b3b397b6b4f4d90d9fe2234c32b6, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0

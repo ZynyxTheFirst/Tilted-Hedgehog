@@ -120,7 +120,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 1.0997905
+  m_Radius: 0.9
 --- !u!82 &5921246986795450408
 AudioSource:
   m_ObjectHideFlags: 0
@@ -130,7 +130,7 @@ AudioSource:
   m_GameObject: {fileID: 8465603088524723686}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 76ba094eb2f57494e99961918e537788, type: 2}
+  OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 9f5be3eee561bb240823b19eb0dd15db, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1

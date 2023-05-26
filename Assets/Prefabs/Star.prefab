@@ -296,7 +296,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.3
+      scalar: 0.4
       minScalar: 3
       maxCurve:
         serializedVersion: 2
@@ -5038,10 +5038,10 @@ AudioSource:
   m_GameObject: {fileID: 8357560797874929561}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 76ba094eb2f57494e99961918e537788, type: 2}
-  m_audioClip: {fileID: 8300000, guid: e3ae4bead0884438a8f8c03b44778600, type: 3}
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: ae3ff10caacb5724097a1a1e48890e67, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0

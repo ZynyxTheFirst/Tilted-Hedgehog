@@ -100,6 +100,7 @@ public class KillPlayer : MonoBehaviour
             {
                 Debug.Log("Spelarn dör, spela ljud");
                 fallingAudioSource.Play();
+                playerAnimator.speed = 1f;
                 playerAnimator.SetBool("isDead", true);
             }
             yield return null;

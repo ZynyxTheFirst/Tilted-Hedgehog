@@ -5,6 +5,8 @@ public class SceneTransition : MonoBehaviour
     public float speed = 5f; // Adjust this value to control the movement speed
     public float initialOffset = -20;
 
+    private AudioSource audioSource;
+
     private Vector3 center;
     private Vector3 targetPosition;
     private Vector3 offsetPosition;
@@ -22,6 +24,8 @@ public class SceneTransition : MonoBehaviour
 
     private void Start()
     {
+        audioSource = gameObject.GetComponent<AudioSource>();
+
         // Calculate the target position at the center of the screen
         float screenWidth = Screen.width;
         float screenHeight = Screen.height;
@@ -69,6 +73,11 @@ public class SceneTransition : MonoBehaviour
 
     private void SlideIn()
     {
+        if(audioSource != null)
+        {
+            audioSource.Play();
+        }
+        
         targetPosition = center;
     }
 }

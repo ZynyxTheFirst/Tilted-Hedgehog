@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "R58N23079BX",
         "name": "com.DefaultCompany.com.unity.template.mobile2D",
-        "processId": 15407,
+        "processId": 16422,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -66,6 +66,12 @@
             "deviceId": "R58N23079BX",
             "name": "com.DefaultCompany.com.unity.template.mobile2D",
             "processId": 15407,
+            "exited": false
+        },
+        {
+            "deviceId": "R58N23079BX",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 16422,
             "exited": false
         }
     ],

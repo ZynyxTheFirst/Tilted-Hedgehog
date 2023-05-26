@@ -1318,10 +1318,6 @@ PrefabInstance:
       propertyPath: movementJoystick
       value: 
       objectReference: {fileID: 2132679990}
-    - target: {fileID: 619393608050173485, guid: 4bf2fe838b27a024e93307b451171ff4, type: 3}
-      propertyPath: resetAllPlayerPref
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4bf2fe838b27a024e93307b451171ff4, type: 3}
 --- !u!4 &1315556787 stripped

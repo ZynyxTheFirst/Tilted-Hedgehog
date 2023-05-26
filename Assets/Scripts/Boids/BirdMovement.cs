@@ -9,6 +9,8 @@ public class BirdMovement : MonoBehaviour
 
     private Vector3 targetPosition; // Target position of the object
     public GameObject shadowObject; // Reference to the shadow object
+    private float shadowOffsetX = 0.12f;
+    private float shadowOffsetY = -0.9f;
 
     void Start()
     {

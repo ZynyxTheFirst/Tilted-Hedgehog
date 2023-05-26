@@ -9,6 +9,8 @@ public class BirdMovement : MonoBehaviour
 
     private Vector3 targetPosition; // Target position of the object
     public GameObject shadowObject; // Reference to the shadow object
+    private float shadowOffsetX = 0.12f;
+    private float shadowOffsetY = -0.9f;
 
     void Start()
     {
@@ -29,7 +31,7 @@ public class BirdMovement : MonoBehaviour
         transform.position = Vector2.MoveTowards(transform.position, targetPosition, movementSpeed * Time.deltaTime);
 
         // Update the position of the shadow object to match the object's position
-        shadowObject.transform.position =  new Vector3(transform.position.x + 0.02f, transform.position.y + -0.4f);
+        shadowObject.transform.position =  new Vector3(transform.position.x + shadowOffsetX, transform.position.y + shadowOffsetY);
 
         // Check if the object has reached the target position
         if (transform.position == targetPosition)

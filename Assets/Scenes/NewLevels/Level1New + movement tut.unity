@@ -391,14 +391,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 431020922771724337, guid: 34e61e841d2fe174788992b05a9f036f, type: 3}
-      propertyPath: m_Volume
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 431020922771724337, guid: 34e61e841d2fe174788992b05a9f036f, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3411574115082857532, guid: 34e61e841d2fe174788992b05a9f036f, type: 3}
       propertyPath: m_Name
       value: MusicPlayer
@@ -451,8 +443,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 125105081828904558, guid: 34e61e841d2fe174788992b05a9f036f, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 34e61e841d2fe174788992b05a9f036f, type: 3}
 =======
 >>>>>>> Stashed changes
@@ -1501,6 +1492,14 @@ PrefabInstance:
     - target: {fileID: 7555068327116121388, guid: 6376d0c3673d5ee40929b68c3e7b36bb, type: 3}
       propertyPath: m_Name
       value: AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7555068327116121389, guid: 6376d0c3673d5ee40929b68c3e7b36bb, type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7555068327116121389, guid: 6376d0c3673d5ee40929b68c3e7b36bb, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7555068327116121390, guid: 6376d0c3673d5ee40929b68c3e7b36bb, type: 3}
       propertyPath: m_RootOrder

@@ -5,8 +5,10 @@ using UnityEngine;
 public class AlteredWindScript : MonoBehaviour
 {
     public ParticleSystem particles;
-
     [SerializeField] private AudioSource audioSource;
+    public SpriteRenderer spriteRenderer;
+    [SerializeField] private Sprite spriteA;
+    [SerializeField] private Sprite spriteB;
     public Rigidbody2D rb;
     public GameObject player;
     public bool angleDownwards, angleUpwards, angleLeft, angleRight = false;
@@ -21,6 +23,7 @@ public class AlteredWindScript : MonoBehaviour
 
     void Start()
     {
+        spriteRenderer = GetComponentInParent<SpriteRenderer>();
         particles.Stop();
     }
     private void Update()
@@ -51,6 +54,7 @@ public class AlteredWindScript : MonoBehaviour
         rb.AddForce(direction * pushForce);
         audioSource.Play();
         particles.Play();
+        spriteRenderer.sprite = spriteB;
         Invoke("RestoreStatesOfPlayerAndBag", 0.40f);
     }
 
@@ -58,6 +62,7 @@ public class AlteredWindScript : MonoBehaviour
     {
         //rb.AddForce(normalState);
         //rb.velocity = normalState;
+        spriteRenderer.sprite = spriteA;
         particles.Stop();
     }
     private void OnTriggerEnter2D(Collider2D other)

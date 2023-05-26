@@ -9855,6 +9855,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   particles: {fileID: 4725616035581342912}
   audioSource: {fileID: 1327866354634670398}
+  spriteRenderer: {fileID: 4724598324390690628}
+  spriteA: {fileID: 21300000, guid: 3866f4d11f298a241a88c56289ff134d, type: 3}
+  spriteB: {fileID: 21300000, guid: 446d87b83b4061249a8edf26cf3c5d92, type: 3}
   rb: {fileID: 0}
   player: {fileID: 0}
   angleDownwards: 0

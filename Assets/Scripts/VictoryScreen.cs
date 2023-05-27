@@ -16,7 +16,7 @@ public class VictoryScreen : MonoBehaviour
 
     private GameObject joystickArea;
     private GameObject player;
-    private GameObject[] starsPickup;
+    //private GameObject[] starsPickup;
     private int currentStarsCollected;
     private int starsCollected;
     

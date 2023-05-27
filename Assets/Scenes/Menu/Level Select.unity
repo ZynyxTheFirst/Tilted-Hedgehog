@@ -287,6 +287,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StarUI
       objectReference: {fileID: 0}
+    - target: {fileID: 4668587052787766456, guid: ba13ac6d28408df43aaad583bc54a23f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4668587052787766457, guid: ba13ac6d28408df43aaad583bc54a23f, type: 3}
       propertyPath: m_Pivot.x
       value: 1

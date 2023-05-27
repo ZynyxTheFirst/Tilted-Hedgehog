@@ -11,18 +11,18 @@ public class EndGoal : MonoBehaviour
     public GameObject starUI;
     public GameObject[] starsScoreScreen;
     public AudioSource audioSource;
-    private string levelIdentifier;
+    //private string levelIdentifier;
 
-    private GameObject joystickArea;
+    //private GameObject joystickArea;
     private VictoryScreen victoryScreen;
     private GameObject player;
-    private GameObject starManager;
-    private Scorehandler SCR;
+    //private GameObject starManager;
+    //private Scorehandler SCR;
     private Animator playerAnimator;
-    private GameObject[] starsPickup;
-    private Sprite starCollected;
+    //private GameObject[] starsPickup;
+    //private Sprite starCollected;
     
-    private int amountCollected;
+    //private int amountCollected;
     private bool animatorOff = true;
     
     private void Update() {
@@ -37,17 +37,17 @@ public class EndGoal : MonoBehaviour
     void Start()
     {
         // Detta är för samlade stjärnor för individuell level.
-        levelIdentifier = SceneManager.GetActiveScene().name;
-        int starsCollected = PlayerPrefs.GetInt(levelIdentifier + "StarsCollected", 0);
-        starManager = GameObject.Find("StarManager");
+        //levelIdentifier = SceneManager.GetActiveScene().name;
+        //int starsCollected = PlayerPrefs.GetInt(levelIdentifier + "StarsCollected", 0);
+        //starManager = GameObject.Find("StarManager");
 
 
-        SCR = gameObject.GetComponent<Scorehandler>();
+        //SCR = gameObject.GetComponent<Scorehandler>();
         victoryScreen = GameObject.Find("VictoryScreen").GetComponent<VictoryScreen>();
         player = GameObject.Find("Character");
-        joystickArea = GameObject.Find("JoystickArea");
-        starCollected = scoreScreen.GetComponent<StarHandler>().starCollected;
-        starsPickup = scoreScreen.GetComponent<StarHandler>().starsPickup;
+        //joystickArea = GameObject.Find("JoystickArea");
+        //starCollected = scoreScreen.GetComponent<StarHandler>().starCollected;
+        //starsPickup = scoreScreen.GetComponent<StarHandler>().starsPickup;
         playerAnimator = player.GetComponent<Animator>();
 
         scoreScreen.transform.localScale = Vector2.zero;
@@ -104,7 +104,6 @@ public class EndGoal : MonoBehaviour
             
             Pause.PauseGame();
             gameObject.SetActive(false);
-            //PlayerPrefs.SetInt("LevelsUnlocked", levelToUnlock);
         }
     }
 }

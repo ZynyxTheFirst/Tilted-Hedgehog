@@ -388,11 +388,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8357560797874929561, guid: 8ece35597a993324eba6a6a55f3a3613, type: 3}
   m_PrefabInstance: {fileID: 37872759}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &283053426 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6779128328465096532, guid: 3fdd332814c5a69418a189c2e7a2c364, type: 3}
-  m_PrefabInstance: {fileID: 1132915284}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &303537725
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -506,7 +501,7 @@ PrefabInstance:
     - target: {fileID: 5887273360097922383, guid: 73d260febcb5b3a43b8692cd01f3b934, type: 3}
       propertyPath: starUI
       value: 
-      objectReference: {fileID: 283053426}
+      objectReference: {fileID: 1132915288}
     - target: {fileID: 5887273360097922383, guid: 73d260febcb5b3a43b8692cd01f3b934, type: 3}
       propertyPath: joyStick
       value: 
@@ -1063,6 +1058,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
       value: UnityEngine.AudioSource, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 6779128328465096532, guid: 3fdd332814c5a69418a189c2e7a2c364, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6779128328465096533, guid: 3fdd332814c5a69418a189c2e7a2c364, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -19.999756
@@ -1096,6 +1095,11 @@ MonoBehaviour:
 --- !u!1 &1132915287 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3188379772704050298, guid: 3fdd332814c5a69418a189c2e7a2c364, type: 3}
+  m_PrefabInstance: {fileID: 1132915284}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1132915288 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6779128328465096532, guid: 3fdd332814c5a69418a189c2e7a2c364, type: 3}
   m_PrefabInstance: {fileID: 1132915284}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1136687397

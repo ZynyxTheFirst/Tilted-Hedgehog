@@ -13,7 +13,7 @@ public class PauseButton : MonoBehaviour
     private void Awake()
     {
         audioSources = FindObjectsOfType<AudioSource>();
-        Time.timeScale = 1;
+        Time.timeScale = 1f;
         menuOpen = false;
         pauseScreen.transform.localScale = Vector2.zero;
     }
@@ -22,7 +22,7 @@ public class PauseButton : MonoBehaviour
     {
         if (pauseScreen.transform.localScale.x == 1 && pauseScreen.transform.localScale.y == 1 && menuOpen == true)
         {
-            Time.timeScale = 0;
+            Time.timeScale = 0f;
         }
     }
 
@@ -72,6 +72,6 @@ public class PauseButton : MonoBehaviour
     private void ClosePauseScreen()
     {
         pauseScreen.transform.LeanScale(Vector2.zero, 0.1f).setEaseInBack();
-        Time.timeScale = 1;
+        Time.timeScale = 1f;
     }
 }

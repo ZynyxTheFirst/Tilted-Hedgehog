@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class EndGoal : MonoBehaviour
@@ -6,15 +7,21 @@ public class EndGoal : MonoBehaviour
     [SerializeField] GameObject scoreScreen;
 
     [SerializeField] GameObject joyStick;
+    
     public GameObject starUI;
     public GameObject[] starsScoreScreen;
+    public AudioSource audioSource;
+    private string levelIdentifier;
 
     private GameObject joystickArea;
+    private VictoryScreen victoryScreen;
     private GameObject player;
+    private GameObject starManager;
+    private Scorehandler SCR;
     private Animator playerAnimator;
     private GameObject[] starsPickup;
     private Sprite starCollected;
-    public AudioSource audioSource;
+    
     private int amountCollected;
     private bool animatorOff = true;
     
@@ -29,6 +36,14 @@ public class EndGoal : MonoBehaviour
 
     void Start()
     {
+        // Detta är för samlade stjärnor för individuell level.
+        levelIdentifier = SceneManager.GetActiveScene().name;
+        int starsCollected = PlayerPrefs.GetInt(levelIdentifier + "StarsCollected", 0);
+        starManager = GameObject.Find("StarManager");
+
+
+        SCR = gameObject.GetComponent<Scorehandler>();
+        victoryScreen = GameObject.Find("VictoryScreen").GetComponent<VictoryScreen>();
         player = GameObject.Find("Character");
         joystickArea = GameObject.Find("JoystickArea");
         starCollected = scoreScreen.GetComponent<StarHandler>().starCollected;
@@ -38,6 +53,7 @@ public class EndGoal : MonoBehaviour
         scoreScreen.transform.localScale = Vector2.zero;
     }
 
+    /*
     public void OpenScoreScreen()
     {
         
@@ -49,6 +65,9 @@ public class EndGoal : MonoBehaviour
         player.GetComponent<MovePlayer>().enabled = false;
         player.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
 
+        // Sparar det aktuella antalet stjärnor när score screen öppnas.
+        PlayerPrefs.SetInt(starManager.GetComponent<StarManager>().GetLevelIdentifier() + "StarsCollected", starManager.GetComponent<StarManager>().GetStarsCollected());
+        PlayerPrefs.Save();
         
         for (int i = 0; i < starsPickup.Length; i++){
             if(starsPickup[i].GetComponent<PickupStar>().IsCollected()){
@@ -58,11 +77,13 @@ public class EndGoal : MonoBehaviour
         for (int i = 0; i < amountCollected; i++)
         {
             starsScoreScreen[i].GetComponent<Image>().sprite = starCollected;
+            SCR.FoundStar();
         }
 
 
         scoreScreen.transform.LeanScale(Vector2.one, 0.5f);
     }
+    */
 
     public void CloseScoreScreen()
     {
@@ -75,7 +96,7 @@ public class EndGoal : MonoBehaviour
         {
             
             audioSource.Play();
-            OpenScoreScreen();
+            victoryScreen.OpenScoreScreen();
             starUI.SetActive(true);
             joyStick.SetActive(false);
             GetComponent<SpriteRenderer>().enabled = false;

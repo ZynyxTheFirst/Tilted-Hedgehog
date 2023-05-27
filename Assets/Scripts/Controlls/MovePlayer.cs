@@ -53,7 +53,7 @@ public class MovePlayer : MonoBehaviour
                 animator.SetBool("isMoving", false);
             }
 
-            // Om velocity inte är 0 så roterar karaktären.
+            // Om velocity inte ï¿½r 0 sï¿½ roterar karaktï¿½ren.
             if (rb.velocity != Vector2.zero)
             {
 
@@ -72,7 +72,7 @@ public class MovePlayer : MonoBehaviour
         if (collision.gameObject.CompareTag("Wall"))
             if (collision.relativeVelocity.magnitude > 0)
                 audioSource.Play();
-        Debug.Log(collision.collider.name);
+        //Debug.Log(collision.collider.name);
     }
 
 }

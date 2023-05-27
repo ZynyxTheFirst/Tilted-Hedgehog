@@ -5,30 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class LevelScript : MonoBehaviour
 {
-    public void Pass()
-    {
-        int currentLevel = SceneManager.GetActiveScene().buildIndex;
-
-        if (currentLevel >= PlayerPrefs.GetInt("levelsUnlocked"))
-        {
-            PlayerPrefs.SetInt("levelsUnlocked", currentLevel + 1);
-        }
-
-        Debug.Log("LEVEL" + PlayerPrefs.GetInt("levelsUnlocked") + "UNLOCKED");
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-        {
+    private void OnTriggerEnter2D(Collider2D collision) {
+        //Om spelaren går in i målet hämtar scriptet den aktiva scenen
+        if (collision.CompareTag("Player")) {
             int currentLevel = SceneManager.GetActiveScene().buildIndex;
 
-            if (currentLevel >= PlayerPrefs.GetInt("levelsUnlocked"))
-            {
+            //Om den aktiva scenen inte är upplåst, låses den upp
+            if (currentLevel >= PlayerPrefs.GetInt("levelsUnlocked")) {
                 PlayerPrefs.SetInt("levelsUnlocked", currentLevel + 1);
             }
 
             Debug.Log("LEVEL" + PlayerPrefs.GetInt("levelsUnlocked") + "UNLOCKED");
         }
     }
+
 }

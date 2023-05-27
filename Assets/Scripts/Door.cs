@@ -2,23 +2,18 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-
     [SerializeField] private GameObject key;
     private Animator animator;
 
-    // Start is called before the first frame update
-    void Start()
-    {
+    void Start() {
         animator = GetComponent<Animator>();
         animator.enabled = false;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if(key.GetComponent<PickupKey>().getPickedUp() == true) {
+    //Kollar om nyckeln är upplockad och sätter då igång animatorn.
+    void Update() {
+        if (key.GetComponent<PickupKey>().getPickedUp() == true) {
             animator.enabled = true;
         }
     }
-
 }

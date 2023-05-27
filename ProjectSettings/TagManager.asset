@@ -10,6 +10,7 @@ TagManager:
   - Wind
   - CollisionTag
   - Wall
+  - Music
   layers:
   - Default
   - TransparentFX

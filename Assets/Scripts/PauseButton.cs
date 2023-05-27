@@ -7,9 +7,13 @@ public class PauseButton : MonoBehaviour
 
     [SerializeField] GameObject joyStick;
     [SerializeField] GameObject starUI;
+    private AudioSource[] audioSources;
     private bool menuOpen = false;
-    void Start()
+
+    private void Awake()
     {
+        audioSources = FindObjectsOfType<AudioSource>();
+        Time.timeScale = 1;
         menuOpen = false;
         pauseScreen.transform.localScale = Vector2.zero;
     }
@@ -26,19 +30,37 @@ public class PauseButton : MonoBehaviour
     {
         if (GameManager.isGameOver || Pause.isPaused)
             return;
+        // Pausa spelet.
         if (!menuOpen)
         {
-            menuOpen=true;
+            foreach (AudioSource audioSource in audioSources)
+            {
+                if (audioSource != null && !audioSource.CompareTag("Music"))
+                {
+                    audioSource.Pause();
+                }
+                
+            }
+            menuOpen =true;
             joyStick.SetActive(false);
             starUI.SetActive(true);
             OpenPauseScreen();
         }
+        // Unpausa spelet.
         else
         {
             menuOpen=false;
             joyStick.SetActive(true);
             starUI.SetActive(false);
             ClosePauseScreen();
+            foreach (AudioSource audioSource in audioSources)
+            {
+                if(audioSource != null && !audioSource.CompareTag("Music"))
+                {
+                    audioSource.UnPause();
+                }
+                
+            }
         }
     }
 

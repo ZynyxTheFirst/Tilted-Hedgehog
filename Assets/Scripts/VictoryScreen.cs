@@ -17,8 +17,6 @@ public class VictoryScreen : MonoBehaviour
     private GameObject joystickArea;
     private GameObject player;
     private GameObject[] starsPickup;
-    private string levelStarCountText;
-    private string totalStarCountText;
     private int currentStarsCollected;
     
 
@@ -31,10 +29,16 @@ public class VictoryScreen : MonoBehaviour
         player = GameObject.Find("Character");
 
         levelIdentifier = SceneManager.GetActiveScene().name;
-        int starsCollected = PlayerPrefs.GetInt(levelIdentifier + "StarsCollected", 0);
-        currentStarsCollected = PlayerPrefs.GetInt(levelIdentifier + "StarsCollected", 0);
-        UpdateStarSprites(starsCollected);
+        currentStarsCollected = PlayerPrefs.GetInt(levelIdentifier + "CurrentStarsCollected", 0);
+
         PlayerPrefs.SetInt(levelIdentifier + "StarsCollected", 0);
+        int starsCollected = PlayerPrefs.GetInt(levelIdentifier + "StarsCollected", 0);
+
+        // Debugging
+        //int totalStarsCollected = PlayerPrefs.GetInt("TotalStarsCollected", 0);
+        //Debug.Log("TotalStars Start: " + totalStarsCollected);
+        Debug.Log("CurrentStars Start: " + currentStarsCollected);
+        Debug.Log("StarsCollected Start: " + starsCollected);
     }
 
     public void UpdateStarSprites(int starsCollected)
@@ -47,9 +51,6 @@ public class VictoryScreen : MonoBehaviour
 
     public void OpenScoreScreen()
     {
-        
-        
-
         if (joystickArea != null)
         {
             joystickArea.SetActive(false);
@@ -72,22 +73,24 @@ public class VictoryScreen : MonoBehaviour
         PlayerPrefs.SetInt(levelIdentifier + "StarsCollected", starsCollected);
         PlayerPrefs.Save();
         */
+
         int starsCollected = PlayerPrefs.GetInt(levelIdentifier + "StarsCollected", 0);
         if (starsCollected > currentStarsCollected)
         {
             currentStarsCollected = starsCollected;
+            PlayerPrefs.SetInt(levelIdentifier + "CurrentStarsCollected", currentStarsCollected);
+
         }
 
         UpdateStarSprites(currentStarsCollected);
         
-        
-
         // Öka det totala antalet stjärnor.
         int totalStarsCollected = PlayerPrefs.GetInt("TotalStarsCollected", 0);
         totalStarsCollected += starsCollected;
         PlayerPrefs.SetInt("TotalStarsCollected", totalStarsCollected);
         PlayerPrefs.Save();
 
+        Debug.Log("CurrentStars Start: " + currentStarsCollected);
         Debug.Log("StarsCollected End: " + starsCollected);
         Debug.Log("TotalStars End: " + totalStarsCollected);
 

@@ -639,6 +639,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: GoToNextLevel, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 3525001840771773809, guid: 3fdd332814c5a69418a189c2e7a2c364, type: 3}
+      propertyPath: victoryScreen
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6779128328465096532, guid: 3fdd332814c5a69418a189c2e7a2c364, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -873,7 +877,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6404478548398420877, guid: 8ece35597a993324eba6a6a55f3a3613, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.81
+      value: -5.3
       objectReference: {fileID: 0}
     - target: {fileID: 6404478548398420877, guid: 8ece35597a993324eba6a6a55f3a3613, type: 3}
       propertyPath: m_LocalPosition.y

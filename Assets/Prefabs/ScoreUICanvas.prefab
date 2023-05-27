@@ -1978,6 +1978,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3188379772704050294}
     m_Modifications:
+    - target: {fileID: 1245813637489347510, guid: 2dbeed55476afce4eb795c7985c0623a, type: 3}
+      propertyPath: victoryScreen
+      value: 
+      objectReference: {fileID: 2009154932874527303}
     - target: {fileID: 4197536668768189568, guid: 2dbeed55476afce4eb795c7985c0623a, type: 3}
       propertyPath: scoreScreen
       value: 

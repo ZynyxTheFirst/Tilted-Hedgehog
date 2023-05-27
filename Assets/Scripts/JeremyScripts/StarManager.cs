@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class StarManager : MonoBehaviour
 {
-    public VictoryScreen victoryScreen;
+    private VictoryScreen victoryScreen;
     private string levelIdentifier;
 
     private int starsCollected;
@@ -29,11 +29,8 @@ public class StarManager : MonoBehaviour
             PlayerPrefs.SetInt(levelIdentifier + "StarsCollected", 3);
         }
         */
-
-        int totalStarsCollected = PlayerPrefs.GetInt("TotalStarsCollected", 0);
-        Debug.Log("StarsCollected Start: " + starsCollected);
-        Debug.Log("TotalStars Start: " + totalStarsCollected);
         
+
     }
 
     public void CollectStar(string levelIdentifier)
@@ -52,7 +49,7 @@ public class StarManager : MonoBehaviour
         victoryScreen = GameObject.Find("VictoryScreen").GetComponent<VictoryScreen>();
         victoryScreen.UpdateStarSprites(starsCollected);
         */
-        Debug.Log("Star collected (StarManager)");
+        Debug.Log("CollectStar() (StarManager)");
     }
 
     public int GetStarsCollected(){

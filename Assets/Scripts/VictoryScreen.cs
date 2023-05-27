@@ -18,6 +18,7 @@ public class VictoryScreen : MonoBehaviour
     private GameObject player;
     private GameObject[] starsPickup;
     private int currentStarsCollected;
+    private int starsCollected;
     
 
     private string levelIdentifier; // Unik identifierare för leveln.
@@ -32,13 +33,13 @@ public class VictoryScreen : MonoBehaviour
         currentStarsCollected = PlayerPrefs.GetInt(levelIdentifier + "CurrentStarsCollected", 0);
 
         PlayerPrefs.SetInt(levelIdentifier + "StarsCollected", 0);
-        int starsCollected = PlayerPrefs.GetInt(levelIdentifier + "StarsCollected", 0);
+        //int starsCollected = PlayerPrefs.GetInt(levelIdentifier + "StarsCollected", 0);
 
         // Debugging
         //int totalStarsCollected = PlayerPrefs.GetInt("TotalStarsCollected", 0);
         //Debug.Log("TotalStars Start: " + totalStarsCollected);
-        Debug.Log("CurrentStars Start: " + currentStarsCollected);
-        Debug.Log("StarsCollected Start: " + starsCollected);
+        //Debug.Log("CurrentStars Start: " + currentStarsCollected);
+        //Debug.Log("StarsCollected Start: " + starsCollected);
     }
 
     public void UpdateStarSprites(int starsCollected)
@@ -74,7 +75,7 @@ public class VictoryScreen : MonoBehaviour
         PlayerPrefs.Save();
         */
 
-        int starsCollected = PlayerPrefs.GetInt(levelIdentifier + "StarsCollected", 0);
+        starsCollected = PlayerPrefs.GetInt(levelIdentifier + "StarsCollected", 0);
         if (starsCollected > currentStarsCollected)
         {
             currentStarsCollected = starsCollected;
@@ -90,10 +91,13 @@ public class VictoryScreen : MonoBehaviour
         PlayerPrefs.SetInt("TotalStarsCollected", totalStarsCollected);
         PlayerPrefs.Save();
 
+        
+        /*
+        // Debugging
         Debug.Log("CurrentStars Start: " + currentStarsCollected);
         Debug.Log("StarsCollected End: " + starsCollected);
         Debug.Log("TotalStars End: " + totalStarsCollected);
-
+        */
         
 
 

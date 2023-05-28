@@ -22,7 +22,7 @@ public class LevelManager : MonoBehaviour
         }
 
         //Kollar vilka levlar som är upplåsta och sätter korresponderande knappar till olåst.
-        for (int i = 0; i < levelsUnlocked; i++) {
+        for (int i = 0; i < levelsUnlocked && i < buttons.Length; i++) {
             buttons[i].GetComponentInChildren<TextMeshProUGUI>().enabled = true;
             buttons[i].interactable = true;
         }

@@ -285,6 +285,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2058865652}
     m_Modifications:
+    - target: {fileID: 5858169657847471544, guid: 8ece35597a993324eba6a6a55f3a3613, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6404478548398420873, guid: 8ece35597a993324eba6a6a55f3a3613, type: 3}
       propertyPath: m_Name
       value: Star1

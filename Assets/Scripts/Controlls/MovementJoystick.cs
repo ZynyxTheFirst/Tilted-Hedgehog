@@ -4,6 +4,7 @@ using UnityEngine.EventSystems;
 
 public class MovementJoystick : MonoBehaviour
 {
+
     public GameObject joystick;
     public GameObject joystickBG;
     public Vector2 joystickVec;
@@ -11,6 +12,7 @@ public class MovementJoystick : MonoBehaviour
     private Vector2 joystickOriginalPos;
     private float joystickRadius;
 
+    // Start is called before the first frame update
     void Start()
     {
         joystickOriginalPos = joystickBG.transform.position;
@@ -19,6 +21,8 @@ public class MovementJoystick : MonoBehaviour
 
     public void PointerDown()
     {
+        joystick.transform.position = Input.mousePosition;
+        joystickBG.transform.position = Input.mousePosition;
         joystickTouchPos = Input.mousePosition;
     }
 
@@ -29,14 +33,23 @@ public class MovementJoystick : MonoBehaviour
         joystickVec = (dragPos - joystickTouchPos).normalized;
 
         float joystickDist = Vector2.Distance(dragPos, joystickTouchPos);
-        float clampedDist = Mathf.Clamp(joystickDist, 0f, joystickRadius);
 
-        joystick.transform.position = joystickTouchPos + joystickVec * clampedDist;
+        if (joystickDist < joystickRadius)
+        {
+            joystick.transform.position = joystickTouchPos + joystickVec * joystickDist;
+        }
+
+        else
+        {
+            joystick.transform.position = joystickTouchPos + joystickVec * joystickRadius;
+        }
     }
 
     public void PointerUp()
     {
         joystickVec = Vector2.zero;
         joystick.transform.position = joystickOriginalPos;
+        joystickBG.transform.position = joystickOriginalPos;
     }
+
 }

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8040487393113308748}
   - component: {fileID: 1510701479008619061}
   - component: {fileID: 5887273360097922383}
+  - component: {fileID: 3739785129656068219}
   - component: {fileID: 6546961496610199907}
   m_Layer: 0
   m_Name: End Goal Sprite
@@ -101,7 +102,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.019624233, y: -0.056069374}
+  m_Offset: {x: -0.014744446, y: -0.056069374}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -112,7 +113,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.78132915, y: 0.65236855}
+  m_Size: {x: 0.62643373, y: 0.52191913}
   m_EdgeRadius: 0
 --- !u!95 &1510701479008619061
 Animator:
@@ -155,6 +156,19 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   audioSource: {fileID: 8439993649198280685}
+--- !u!114 &3739785129656068219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6235511680132586176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da6cc4aa645376f4486592f011e9c005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 0}
 --- !u!114 &6546961496610199907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,7 +226,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 7bd7c0a36119ecf49abf3908c4ca56e9, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0

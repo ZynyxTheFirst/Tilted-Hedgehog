@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class SceneTransition : MonoBehaviour
 {
-    public float speed = 5f; // Adjust this value to control the movement speed
-    public float initialOffset = -20;
+    private float speed = 15f; // Adjust this value to control the movement speed
+    private float initialOffset = -20;
 
     private AudioSource audioSource;
 

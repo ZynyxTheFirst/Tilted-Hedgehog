@@ -13,6 +13,7 @@ public class Boid : MonoBehaviour
 
     private void Start()
     {
+        Physics2D.IgnoreLayerCollision(6, 7);
         BoidConfig config = gameObject.GetComponentInParent<BoidConfig>();
         maxSpeed = config.maxSpeed;
         maxForce = config.maxForce;

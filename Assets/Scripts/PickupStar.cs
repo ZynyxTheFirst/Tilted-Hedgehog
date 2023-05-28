@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class PickupStar : MonoBehaviour
 {
     public Scorehandler SCR;
+    public StarManager starManager;
 
     public LayerMask PlayerMask;
     public float CollectRadius = 0.5f;
@@ -15,10 +16,13 @@ public class PickupStar : MonoBehaviour
     private bool isCollected = false;
     private bool animatorOff = true;
     private string saveKey;
+    private string levelIdentifier; // Unik identifierare för leveln.
     [SerializeField] private AudioSource collectionSoundEffect;
 
     private void Start()
     {
+        levelIdentifier = SceneManager.GetActiveScene().name;
+
         particleSys = GetComponent<ParticleSystem>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         // Skapar ett unikt saveKey för varje stjärnobjekt.
@@ -45,14 +49,19 @@ public class PickupStar : MonoBehaviour
         
         if (Physics2D.OverlapCircle(this.transform.position, CollectRadius, PlayerMask) && isCollected == false)
         {
-            
+            starManager.CollectStar(levelIdentifier);
+
+            // Sparar ner stjärnan så den visas sen.
             PlayerPrefs.SetInt("StarsCollected", starsCollected +1);
 
             isCollected = true;
+            /*
             SCR.FoundStar();
             // Spara om stjärnarn har blivit upplockad eller inte.
             PlayerPrefs.SetInt(saveKey, 1);
             PlayerPrefs.Save();
+            */
+
             particleSys.Play();
             collectionSoundEffect.Play();
             spriteRenderer.enabled = false;

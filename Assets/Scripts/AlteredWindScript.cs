@@ -70,7 +70,7 @@ public class AlteredWindScript : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInZone = true;
-            InvokeRepeating("PumpAir", 0.2f, 0.5f);
+            InvokeRepeating("PumpAir", 0.2f, 1f);
         }
     }
     private void OnTriggerExit2D(Collider2D other)

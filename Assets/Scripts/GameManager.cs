@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     {
         isGameOver = false;
         canvas.SetActive(true);
+        Time.timeScale = 1f;
     }
 
     void Start()

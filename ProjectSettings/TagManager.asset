@@ -10,6 +10,7 @@ TagManager:
   - Wind
   - CollisionTag
   - Wall
+  - Music
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - Water
   - UI
   - Player
-  - 
+  - Boids
   - 
   - 
   - 
@@ -44,6 +45,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Water
+    uniqueID: 3067755017
+    locked: 0
+  - name: Boids
+    uniqueID: 73566917
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
@@ -55,6 +62,12 @@ TagManager:
     locked: 0
   - name: World
     uniqueID: 3537235783
+    locked: 0
+  - name: Shadows
+    uniqueID: 3585850119
+    locked: 0
+  - name: Sky
+    uniqueID: 286542535
     locked: 0
   - name: UI
     uniqueID: 2309625415

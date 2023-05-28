@@ -49,6 +49,7 @@ GameObject:
   - component: {fileID: 7938629845687674552}
   - component: {fileID: 4206627621330689765}
   - component: {fileID: 8709306358157090512}
+  - component: {fileID: 7108753390567200652}
   m_Layer: 0
   m_Name: StarSprite
   m_TagString: Untagged
@@ -4939,6 +4940,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SCR: {fileID: 7938629845687674552}
+  starManager: {fileID: 7108753390567200652}
   PlayerMask:
     serializedVersion: 2
     m_Bits: 64
@@ -5125,3 +5127,15 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7108753390567200652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8357560797874929561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13d2ccb29430f194cb7f25112939bd13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

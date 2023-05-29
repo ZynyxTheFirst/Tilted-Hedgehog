@@ -1867,6 +1867,10 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 44.6
       objectReference: {fileID: 0}
+    - target: {fileID: 4668587052787766439, guid: ba13ac6d28408df43aaad583bc54a23f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4668587052787766456, guid: ba13ac6d28408df43aaad583bc54a23f, type: 3}
       propertyPath: m_Name
       value: StarUI
@@ -1905,11 +1909,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4668587052787766457, guid: ba13ac6d28408df43aaad583bc54a23f, type: 3}
       propertyPath: m_SizeDelta.x
-      value: -1820
+      value: -1820.6924
       objectReference: {fileID: 0}
     - target: {fileID: 4668587052787766457, guid: ba13ac6d28408df43aaad583bc54a23f, type: 3}
       propertyPath: m_SizeDelta.y
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4668587052787766457, guid: ba13ac6d28408df43aaad583bc54a23f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4668587052787766457, guid: ba13ac6d28408df43aaad583bc54a23f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4668587052787766457, guid: ba13ac6d28408df43aaad583bc54a23f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5000001
       objectReference: {fileID: 0}
     - target: {fileID: 4668587052787766457, guid: ba13ac6d28408df43aaad583bc54a23f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1941,11 +1957,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4668587052787766457, guid: ba13ac6d28408df43aaad583bc54a23f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -19.999878
+      value: -20.345947
       objectReference: {fileID: 0}
     - target: {fileID: 4668587052787766457, guid: ba13ac6d28408df43aaad583bc54a23f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -20
+      value: -19.80542
       objectReference: {fileID: 0}
     - target: {fileID: 4668587052787766457, guid: ba13ac6d28408df43aaad583bc54a23f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
